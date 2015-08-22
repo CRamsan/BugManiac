@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js">
+</script>
+<script>
+$(document).ready(function(){
+    $.get("http://amplified-ward-94808.appspot.com/bugs", function(data, status){
+        var bugList = JSON.parse(data);
+        var table  = $("#bugTable")
+
+        $.each(bugList.data, function(rowIndex, r) {
+            var row = $("<tr/>");
+            $.each(r, function(colIndex, c) { 
+                row.append($("<td/>").text(c));
+            });
+            table.append(row);
+        });
+    });
+});
+</script>
+</head>
+<body>
+
+    <table id="bugTable">
+    </table>
+    
+</body>
+</html>
+

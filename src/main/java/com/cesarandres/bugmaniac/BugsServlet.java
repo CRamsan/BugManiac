@@ -26,6 +26,8 @@ public class BugsServlet extends HttpServlet {
 	public void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws IOException {
 		resp.setContentType("application/json");
+		resp.addHeader("Access-Control-Allow-Origin", "*");
+		
 		String requestPath = req.getPathInfo();
 		logger.info(requestPath);
 		
@@ -68,6 +70,8 @@ public class BugsServlet extends HttpServlet {
 	public void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws IOException {
 		resp.setContentType("application/json");
+		resp.addHeader("Access-Control-Allow-Origin", "*");
+		
 		String requestPath = req.getPathInfo();
 		logger.info(requestPath);
 		
@@ -131,6 +135,8 @@ public class BugsServlet extends HttpServlet {
 	public void doDelete(HttpServletRequest req, HttpServletResponse resp)
 			throws IOException {
 		resp.setContentType("application/json");
+		resp.addHeader("Access-Control-Allow-Origin", "*");
+		
 		String requestPath = req.getPathInfo();
 		logger.info(requestPath);
 
