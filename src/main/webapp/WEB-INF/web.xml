@@ -21,4 +21,8 @@
 	<listener>
 		<listener-class>com.cesarandres.bugmaniac.OfyHelper</listener-class>
 	</listener>
+	<static-files>
+		<include path="/*" />
+		<exclude path="/WEB-INF/*" />
+	</static-files>
 </web-app>

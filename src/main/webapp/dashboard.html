@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js">
+</script>
+<script>
+var API_URL = "http://amplified-ward-94808.appspot.com/bugs";
+var nextCursor = undefined;
+var previousCursor = undefined;
+
+function nextPage(){
+    updateData(nextCursor);
+}
+
+function previousPage(){
+    updateData(previousCursor);
+}
+
+function deleteBug(bugId) {
+    $.ajax({
+        url: API_URL + "/" + bugId,
+        type: 'DELETE',
+        success: function(result) {
+            location.reload();
+        },
+        error: function(error) {
+
+        }
+    });
+}
+    
+function updateData(cursor) {
+    var dataURL = API_URL;
+    if(typeof(cursor) !== 'undefined'){
+        dataURL += "?cursor=" + nextCursor;
+    }
+    $.get(dataURL, function(data, status){
+        var bugList = data;
+        var table  = $("#bugTable")
+        $(table).empty();
+        
+        previousCursor = nextCursor;
+        nextCursor=data.next_cursor;
+        
+        $.each(bugList.data, function(rowIndex, r) {
+            var row = $("<tr/>");
+            $.each(r, function(colIndex, c) { 
+                row.append($("<td/>").text(c));
+            });            
+            var deleteButton = $('<button/>',
+            {
+                text: 'Delete',
+                click: function () { deleteBug(r.REPORT_ID); }
+            });
+            row.append(deleteButton);
+            table.append(row);
+        });
+    });
+}
+
+$(document).ready(function(){
+    updateData();
+});
+</script>
+</head>
+<body>
+
+    <table id="bugTable">
+    </table>
+
+    <button id="previousButton" onclick="previousPage()">Previous</button>
+    <button id="nextButton"     onclick="nextPage()"    >Next</button>
+</body>
+</html>
+

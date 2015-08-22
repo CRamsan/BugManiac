@@ -17,12 +17,12 @@ public class EntityManager {
 	public static final int DEFAULT_PAGE_SIZE = 10;
 
 	public static ACRAReportList getAllAcraReports(int pageSize,
-			String cursorString) {
+			Cursor cursor) {
 		Query<ACRAReport> query = ObjectifyService.ofy().load()
 				.type(ACRAReport.class).limit(pageSize);
 
-		if (cursorString != null && !("null".equalsIgnoreCase(cursorString)))
-			query = query.startAt(Cursor.fromWebSafeString(cursorString));
+		if (cursor != null)
+			query = query.startAt(cursor);
 
 		boolean continueIter = false;
 		QueryResultIterator<ACRAReport> iterator = query.iterator();
@@ -35,11 +35,11 @@ public class EntityManager {
 
 		String cursorNextString = null;
 		if (continueIter) {
-			Cursor cursor = iterator.getCursor();
-			cursorNextString = cursor.toWebSafeString();
+			Cursor nextCursor = iterator.getCursor();
+			cursorNextString = nextCursor.toWebSafeString();
 		}
 
-		if (cursorNextString != null || cursorString != null) {
+		if (cursorNextString != null) {
 			Queue queue = QueueFactory.getDefaultQueue();
 			TaskOptions options = TaskOptions.Builder.withUrl("/");
 			if (cursorNextString != null) {

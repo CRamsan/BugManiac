@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.cesarandres.bugmaniac.model.ACRAReport;
 import com.cesarandres.bugmaniac.model.ACRAReportList;
 import com.fasterxml.jackson.databind.JsonMappingException;
+import com.google.appengine.api.datastore.Cursor;
 import com.google.appengine.repackaged.org.codehaus.jackson.JsonGenerationException;
 
 public class BugsServlet extends HttpServlet {
@@ -45,13 +46,26 @@ public class BugsServlet extends HttpServlet {
 			Helpers.respondWithError(out, "Bad request. Property \"count\" has invalid value");
 			return;
 		}
-				
-		String cursorString = req.getParameter("cursor");
 
+		String cursorString = req.getParameter("cursor");
+		Cursor cursor = null;
+		
+		if (cursorString != null && !("null".equalsIgnoreCase(cursorString))){
+			try{
+				cursor = Cursor.fromWebSafeString(cursorString);
+			}catch(IllegalArgumentException e){
+				resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+				logger.warning(e.getMessage());
+				Helpers.respondWithError(out, "Bad request. Cursor is not valid");
+				return;
+			}
+		}
+
+		
 		String bugID = Helpers.getBugId(requestPath);
 		
 		if(bugID == null){
-			ACRAReportList response = EntityManager.getAllAcraReports(pageSize, cursorString);
+			ACRAReportList response = EntityManager.getAllAcraReports(pageSize, cursor);
 			resp.setStatus(HttpServletResponse.SC_OK);
 			Helpers.respondWithData(out, response);
 		}else{
