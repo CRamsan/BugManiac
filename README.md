@@ -1,4 +1,4 @@
-appengine-skeleton
+Bug Maniac
 =============================
 
-This is a generated application from the appengine-skeleton archetype.
+More coming soon
