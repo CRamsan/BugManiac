@@ -61,15 +61,6 @@ function updateData(cursor) {
         
         $.each(bugList.data, function(rowIndex, r) {
             var row = $("<tr/>");
-
-            var detailsButton = $('<button/>',
-            {
-                text: 'Open',
-                click: function () { 
-                    window.location.href = "/bugs/" + r.REPORT_ID;
-                }
-            });
-            row.append(detailsButton);
             
             $.each(PROPERTY_ARRAY, function(colIndex, c) { 
                 row.append($("<td/>").text(r[c]));
@@ -79,7 +70,6 @@ function updateData(cursor) {
                 text: 'Delete',
                 click: function () { deleteBug(r.REPORT_ID); }
             });
-            
             row.append(deleteButton);
             table.append(row);
         });

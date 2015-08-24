@@ -2,3 +2,7 @@ body {
     font-family: Verdana, Helvetica, sans-serif;
     background-color: #FFFFCC;
 }
+
+table, th, td {
+   border: 1px solid black;
+}
