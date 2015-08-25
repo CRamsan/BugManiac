@@ -5,7 +5,7 @@
 </script>
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <script>
-var API_URL = "http://amplified-ward-94808.appspot.com/bugs";
+var API_URL = "http://amplified-ward-94808.appspot.com/";
 var nextCursor = undefined;
 var currentCursor = undefined;
 var previousCursor = undefined;
@@ -21,8 +21,12 @@ var PROPERTY_ARRAY = [
     "STACK_TRACE"
 ];
     
+function getURLParameter(name) {
+    return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null
+}
+    
 function nextPage(){
-    window.location.href = API_URL + "/?cursor=" + nextCursor;
+    window.location.href = API_URL + "/dashboard.html?cursor=" + nextCursor;
 }
 
 function previousPage(){
@@ -31,7 +35,7 @@ function previousPage(){
 
 function deleteBug(bugId) {
     $.ajax({
-        url: API_URL + "/" + bugId,
+        url: API_URL + "/bugs/" + bugId,
         type: 'DELETE',
         success: function(result) {
             location.reload();
@@ -43,10 +47,14 @@ function deleteBug(bugId) {
 }
     
 function updateData(cursor) {
-    var dataURL = API_URL;
+    var dataURL = API_URL + "/bugs";
     if(typeof(cursor) !== 'undefined'){
         dataURL += "?cursor=" + cursor;
+        $("#previousButton").show();
+    }else{
+        $("#previousButton").hide();
     }
+    
     $.get(dataURL, function(data, status){
         var bugList = data;
         var table  = $("#bugTable")
@@ -99,7 +107,8 @@ function updateData(cursor) {
 }
 
 $(document).ready(function(){
-    updateData();
+    var cursor = getURLParameter("cursor")
+    updateData(cursor);
 });
 </script>
 </head>
