@@ -7,6 +7,7 @@
 <script>
 var API_URL = "http://amplified-ward-94808.appspot.com/bugs";
 var nextCursor = undefined;
+var currentCursor = undefined;
 var previousCursor = undefined;
 
 var PROPERTY_ARRAY = [
@@ -17,14 +18,15 @@ var PROPERTY_ARRAY = [
     "APP_VERSION_CODE",
     "USER_CRASH_DATE",
     "APP_VERSION_NAME",
+    "STACK_TRACE"
 ];
     
 function nextPage(){
-    updateData(nextCursor);
+    window.location.href = API_URL + "/?cursor=" + nextCursor;
 }
 
 function previousPage(){
-    updateData(previousCursor);
+    window.history.back();
 }
 
 function deleteBug(bugId) {
@@ -50,10 +52,10 @@ function updateData(cursor) {
         var table  = $("#bugTable")
         $(table).empty();
         
-        previousCursor = nextCursor;
         nextCursor=data.next_cursor;
 
         var header = $("<tr/>");
+        header.append($("<th/>"));
         $.each(PROPERTY_ARRAY, function(columnIndex, c) {
             header.append($("<th/>").text(c));
         });
@@ -72,7 +74,17 @@ function updateData(cursor) {
             row.append(detailsButton);
             
             $.each(PROPERTY_ARRAY, function(colIndex, c) { 
-                row.append($("<td/>").text(r[c]));
+                if(c == "STACK_TRACE"){
+                    var lines = r[c].split('\n');
+                    var errorSignature;
+                    var size = (lines.length <= 2 ? lines.length : 2);
+                    for(var i = 0;i < size;i++){
+                        errorSignature += lines[i];
+                    }
+                    row.append($("<td/>").text(errorSignature));
+                }else{
+                    row.append($("<td/>").text(r[c]));
+                }
             });            
             var deleteButton = $('<button/>',
             {
