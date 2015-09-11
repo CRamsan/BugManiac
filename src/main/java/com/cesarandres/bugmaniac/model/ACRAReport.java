@@ -1,18 +1,26 @@
 package com.cesarandres.bugmaniac.model;
 
+import java.math.BigInteger;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.security.Signature;
+
 import javax.annotation.Generated;
 
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.googlecode.objectify.Key;
 import com.googlecode.objectify.annotation.Entity;
 import com.googlecode.objectify.annotation.Id;
 import com.googlecode.objectify.annotation.Index;
+import com.googlecode.objectify.annotation.Parent;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -44,7 +52,8 @@ import com.googlecode.objectify.annotation.Index;
     "TOTAL_MEM_SIZE",
     "FILE_PATH",
     "ENVIRONMENT",
-    "REPORT_ID"
+    "REPORT_ID",
+    "SIGNATURE"
 })
 
 @Entity
@@ -114,8 +123,22 @@ public class ACRAReport {
     
     @JsonProperty("REPORT_ID")
     @Id private String REPORTID;
+    
+    @JsonProperty("SIGNATURE")
+    @Index
+    private String SIGNATURE;
 
-    /**
+    @JsonProperty("SIGNATURE")
+    public String getSignature() {
+		return SIGNATURE;
+	}
+    
+    @JsonProperty("SIGNATURE")
+	public void setSignature(String SIGNATURE) {
+		this.SIGNATURE = SIGNATURE;
+	}
+
+	/**
      * 
      * @return
      *     The USEREMAIL
@@ -677,4 +700,36 @@ public class ACRAReport {
         return new EqualsBuilder().append(USEREMAIL, rhs.USEREMAIL).append(SETTINGSGLOBAL, rhs.SETTINGSGLOBAL).append(DEVICEFEATURES, rhs.DEVICEFEATURES).append(PHONEMODEL, rhs.PHONEMODEL).append(INSTALLATIONID, rhs.INSTALLATIONID).append(SETTINGSSYSTEM, rhs.SETTINGSSYSTEM).append(ANDROIDVERSION, rhs.ANDROIDVERSION).append(PACKAGENAME, rhs.PACKAGENAME).append(APPVERSIONCODE, rhs.APPVERSIONCODE).append(CRASHCONFIGURATION, rhs.CRASHCONFIGURATION).append(USERCRASHDATE, rhs.USERCRASHDATE).append(DUMPSYSMEMINFO, rhs.DUMPSYSMEMINFO).append(BUILD, rhs.BUILD).append(BUILDCONFIG, rhs.BUILDCONFIG).append(STACKTRACE, rhs.STACKTRACE).append(PRODUCT, rhs.PRODUCT).append(DISPLAY, rhs.DISPLAY).append(LOGCAT, rhs.LOGCAT).append(APPVERSIONNAME, rhs.APPVERSIONNAME).append(AVAILABLEMEMSIZE, rhs.AVAILABLEMEMSIZE).append(USERAPPSTARTDATE, rhs.USERAPPSTARTDATE).append(CUSTOMDATA, rhs.CUSTOMDATA).append(BRAND, rhs.BRAND).append(TOTALMEMSIZE, rhs.TOTALMEMSIZE).append(FILEPATH, rhs.FILEPATH).append(ENVIRONMENT, rhs.ENVIRONMENT).append(REPORTID, rhs.REPORTID).isEquals();
     }
 
+    @JsonIgnore
+	public String getCrashHeader() {
+		String[] stackTrace = this.getSTACKTRACE().split("\n");
+		int signatureSize = (stackTrace.length <= 2 ? stackTrace.length : 2);
+		String stackTraceHeader = "";
+
+		for (int i = 0; i < signatureSize; i++) {
+			stackTraceHeader += stackTrace[i];
+		}
+		
+		return stackTraceHeader;
+	}
+
+    @JsonIgnore
+	public String generateSignature() {
+		MessageDigest m;
+		try {
+			m = MessageDigest.getInstance("MD5");
+		} catch (NoSuchAlgorithmException e) {
+			return "00000000O";
+		}
+		m.reset();
+		m.update(this.getCrashHeader().getBytes());
+		byte[] digest = m.digest();
+		BigInteger bigInt = new BigInteger(1, digest);
+		String hashtext = bigInt.toString(16);
+		// Now we need to zero pad it if you actually want the full 32 chars.
+		while (hashtext.length() < 32) {
+			hashtext = "0" + hashtext;
+		}
+		return hashtext;
+	}
 }

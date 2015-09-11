@@ -61,11 +61,10 @@ public class BugsServlet extends HttpServlet {
 			}
 		}
 
-		
-		String bugID = Helpers.getBugId(requestPath);
+		String bugID = Helpers.getElementId(requestPath);
 		
 		if(bugID == null){
-			ACRAReportList response = EntityManager.getAllAcraReports(pageSize, cursor);
+			ACRAReportList response = (ACRAReportList) EntityManager.getAllElements(pageSize, cursor, ACRAReport.class);
 			resp.setStatus(HttpServletResponse.SC_OK);
 			Helpers.respondWithData(out, response);
 		}else{
@@ -89,7 +88,7 @@ public class BugsServlet extends HttpServlet {
 		String requestPath = req.getPathInfo();
 		logger.info(requestPath);
 		
-		String bugID = Helpers.getBugId(requestPath);
+		String bugID = Helpers.getElementId(requestPath);
 
 		PrintWriter out = resp.getWriter();
 		if(bugID != null){
@@ -155,7 +154,7 @@ public class BugsServlet extends HttpServlet {
 		logger.info(requestPath);
 
 		PrintWriter out = resp.getWriter();				
-		String bugID = Helpers.getBugId(requestPath);
+		String bugID = Helpers.getElementId(requestPath);
 		if(bugID == null){
 			resp.setStatus(HttpServletResponse.SC_NOT_FOUND);
 			Helpers.respondWithError(out, "No bug report found");

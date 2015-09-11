@@ -4,6 +4,7 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 
 import com.cesarandres.bugmaniac.model.ACRAReport;
+import com.cesarandres.bugmaniac.model.ReportBucket;
 import com.googlecode.objectify.ObjectifyService;
 
 /**
@@ -16,6 +17,7 @@ public class OfyHelper implements ServletContextListener {
 		// request if no warmup
 		// request.
 		ObjectifyService.register(ACRAReport.class);
+		ObjectifyService.register(ReportBucket.class);
 	}
 
 	public void contextDestroyed(ServletContextEvent event) {

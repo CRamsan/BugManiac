@@ -6,9 +6,25 @@
 		<servlet-name>bugs</servlet-name>
 		<servlet-class>com.cesarandres.bugmaniac.BugsServlet</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>buckets</servlet-name>
+		<servlet-class>com.cesarandres.bugmaniac.BucketsServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>admin</servlet-name>
+		<servlet-class>com.cesarandres.bugmaniac.AdminServlet</servlet-class>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>bugs</servlet-name>
 		<url-pattern>/bugs/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>buckets</servlet-name>
+		<url-pattern>/buckets/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>admin</servlet-name>
+		<url-pattern>/admin/*</url-pattern>
 	</servlet-mapping>
 	<filter>
 		<filter-name>ObjectifyFilter</filter-name>
