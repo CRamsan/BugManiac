@@ -1,15 +1,9 @@
 package com.cesarandres.bugmaniac;
 
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.math.BigInteger;
 import java.util.UUID;
 
-import com.cesarandres.bugmaniac.model.ACRAReport;
-import com.cesarandres.bugmaniac.model.ACRAReportList;
-import com.cesarandres.bugmaniac.model.ReportBucketList;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class Helpers {

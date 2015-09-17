@@ -8,9 +8,6 @@ import com.cesarandres.bugmaniac.model.ReportBucket;
 import com.cesarandres.bugmaniac.model.ReportBucketList;
 import com.google.appengine.api.datastore.Cursor;
 import com.google.appengine.api.datastore.QueryResultIterator;
-import com.google.appengine.api.taskqueue.Queue;
-import com.google.appengine.api.taskqueue.QueueFactory;
-import com.google.appengine.api.taskqueue.TaskOptions;
 import com.googlecode.objectify.Key;
 import com.googlecode.objectify.ObjectifyService;
 import com.googlecode.objectify.cmd.Query;
@@ -37,15 +34,6 @@ public class EntityManager {
 		if (continueIter) {
 			Cursor nextCursor = iterator.getCursor();
 			cursorNextString = nextCursor.toWebSafeString();
-		}
-
-		if (cursorNextString != null) {
-			Queue queue = QueueFactory.getDefaultQueue();
-			TaskOptions options = TaskOptions.Builder.withUrl("/");
-			if (cursorNextString != null) {
-				options.param("cursor", cursorNextString);
-			}
-			queue.add(options);
 		}
 
 		if (itemClass == ACRAReport.class) {

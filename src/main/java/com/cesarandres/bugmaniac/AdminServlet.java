@@ -10,10 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.cesarandres.bugmaniac.model.ACRAReport;
 import com.cesarandres.bugmaniac.model.ACRAReportList;
-import com.cesarandres.bugmaniac.model.ReportBucket;
 import com.google.appengine.api.datastore.Cursor;
-import com.googlecode.objectify.Key;
-import com.googlecode.objectify.ObjectifyService;
 
 public class AdminServlet extends HttpServlet {
 
