@@ -1,4 +1,8 @@
 Bug Maniac
 =============================
 
-More coming soon
+To do a clean install do
+mvn clean install
+
+To deploy to GAE do
+mvn appengine:update

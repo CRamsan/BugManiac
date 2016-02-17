@@ -12,9 +12,10 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.cesarandres.bugmaniac.model.ACRAReport;
 import com.cesarandres.bugmaniac.model.ACRAReportList;
+import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.google.appengine.api.datastore.Cursor;
-import com.google.appengine.repackaged.org.codehaus.jackson.JsonGenerationException;
+//import com.google.appengine.repackaged.org.codehaus.jackson.JsonGenerationException;
 
 public class BugsServlet extends HttpServlet {
 

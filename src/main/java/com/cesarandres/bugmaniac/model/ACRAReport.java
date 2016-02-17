@@ -699,14 +699,17 @@ public class ACRAReport {
 
     @JsonIgnore
 	public String getCrashHeader() {
-		String[] stackTrace = this.getSTACKTRACE().split("\n");
-		int signatureSize = (stackTrace.length <= 2 ? stackTrace.length : 2);
+    	String fullStackTrace = this.getSTACKTRACE();
 		String stackTraceHeader = "";
-
-		for (int i = 0; i < signatureSize; i++) {
-			stackTraceHeader += stackTrace[i];
-		}
-		
+    	if (fullStackTrace != null) {
+			String[] stackTrace = this.getSTACKTRACE().split("\n");
+			int signatureSize = (stackTrace.length <= 2 ? stackTrace.length : 2);
+	
+			for (int i = 0; i < signatureSize; i++) {
+				stackTraceHeader += stackTrace[i];
+			}
+    	}
+    	
 		return stackTraceHeader;
 	}
 
