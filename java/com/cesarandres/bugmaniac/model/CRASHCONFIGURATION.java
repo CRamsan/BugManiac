@@ -56,41 +56,41 @@ public class CRASHCONFIGURATION implements Serializable{
     @JsonProperty("keyboard")
     private String keyboard;
     @JsonProperty("mcc")
-    private Long mcc;
+    private String mcc;
     @JsonProperty("locale")
     private String locale;
     @JsonProperty("densityDpi")
-    private Long densityDpi;
+    private String densityDpi;
     @JsonProperty("compatSmallestScreenWidthDp")
-    private Long compatSmallestScreenWidthDp;
+    private String compatSmallestScreenWidthDp;
     @JsonProperty("compatScreenHeightDp")
-    private Long compatScreenHeightDp;
+    private String compatScreenHeightDp;
     @JsonProperty("fontScale")
     private String fontScale;
     @JsonProperty("navigationHidden")
     private String navigationHidden;
     @JsonProperty("screenWidthDp")
-    private Long screenWidthDp;
+    private String screenWidthDp;
     @JsonProperty("uiMode")
     private String uiMode;
     @JsonProperty("screenHeightDp")
-    private Long screenHeightDp;
+    private String screenHeightDp;
     @JsonProperty("userSetLocale")
     private Boolean userSetLocale;
     @JsonProperty("smallestScreenWidthDp")
-    private Long smallestScreenWidthDp;
+    private String smallestScreenWidthDp;
     @JsonProperty("navigation")
     private String navigation;
     @JsonProperty("seq")
-    private Long seq;
+    private String seq;
     @JsonProperty("keyboardHidden")
     private String keyboardHidden;
     @JsonProperty("mnc")
-    private Long mnc;
+    private String mnc;
     @JsonProperty("touchscreen")
     private String touchscreen;
     @JsonProperty("compatScreenWidthDp")
-    private Long compatScreenWidthDp;
+    private String compatScreenWidthDp;
 
     /**
      * 
@@ -178,7 +178,7 @@ public class CRASHCONFIGURATION implements Serializable{
      *     The mcc
      */
     @JsonProperty("mcc")
-    public Long getMcc() {
+    public String getMcc() {
         return mcc;
     }
 
@@ -188,7 +188,7 @@ public class CRASHCONFIGURATION implements Serializable{
      *     The mcc
      */
     @JsonProperty("mcc")
-    public void setMcc(Long mcc) {
+    public void setMcc(String mcc) {
         this.mcc = mcc;
     }
 
@@ -218,7 +218,7 @@ public class CRASHCONFIGURATION implements Serializable{
      *     The densityDpi
      */
     @JsonProperty("densityDpi")
-    public Long getDensityDpi() {
+    public String getDensityDpi() {
         return densityDpi;
     }
 
@@ -228,7 +228,7 @@ public class CRASHCONFIGURATION implements Serializable{
      *     The densityDpi
      */
     @JsonProperty("densityDpi")
-    public void setDensityDpi(Long densityDpi) {
+    public void setDensityDpi(String densityDpi) {
         this.densityDpi = densityDpi;
     }
 
@@ -238,7 +238,7 @@ public class CRASHCONFIGURATION implements Serializable{
      *     The compatSmallestScreenWidthDp
      */
     @JsonProperty("compatSmallestScreenWidthDp")
-    public Long getCompatSmallestScreenWidthDp() {
+    public String getCompatSmallestScreenWidthDp() {
         return compatSmallestScreenWidthDp;
     }
 
@@ -248,7 +248,7 @@ public class CRASHCONFIGURATION implements Serializable{
      *     The compatSmallestScreenWidthDp
      */
     @JsonProperty("compatSmallestScreenWidthDp")
-    public void setCompatSmallestScreenWidthDp(Long compatSmallestScreenWidthDp) {
+    public void setCompatSmallestScreenWidthDp(String compatSmallestScreenWidthDp) {
         this.compatSmallestScreenWidthDp = compatSmallestScreenWidthDp;
     }
 
@@ -258,7 +258,7 @@ public class CRASHCONFIGURATION implements Serializable{
      *     The compatScreenHeightDp
      */
     @JsonProperty("compatScreenHeightDp")
-    public Long getCompatScreenHeightDp() {
+    public String getCompatScreenHeightDp() {
         return compatScreenHeightDp;
     }
 
@@ -268,7 +268,7 @@ public class CRASHCONFIGURATION implements Serializable{
      *     The compatScreenHeightDp
      */
     @JsonProperty("compatScreenHeightDp")
-    public void setCompatScreenHeightDp(Long compatScreenHeightDp) {
+    public void setCompatScreenHeightDp(String compatScreenHeightDp) {
         this.compatScreenHeightDp = compatScreenHeightDp;
     }
 
@@ -318,7 +318,7 @@ public class CRASHCONFIGURATION implements Serializable{
      *     The screenWidthDp
      */
     @JsonProperty("screenWidthDp")
-    public Long getScreenWidthDp() {
+    public String getScreenWidthDp() {
         return screenWidthDp;
     }
 
@@ -328,7 +328,7 @@ public class CRASHCONFIGURATION implements Serializable{
      *     The screenWidthDp
      */
     @JsonProperty("screenWidthDp")
-    public void setScreenWidthDp(Long screenWidthDp) {
+    public void setScreenWidthDp(String screenWidthDp) {
         this.screenWidthDp = screenWidthDp;
     }
 
@@ -358,7 +358,7 @@ public class CRASHCONFIGURATION implements Serializable{
      *     The screenHeightDp
      */
     @JsonProperty("screenHeightDp")
-    public Long getScreenHeightDp() {
+    public String getScreenHeightDp() {
         return screenHeightDp;
     }
 
@@ -368,7 +368,7 @@ public class CRASHCONFIGURATION implements Serializable{
      *     The screenHeightDp
      */
     @JsonProperty("screenHeightDp")
-    public void setScreenHeightDp(Long screenHeightDp) {
+    public void setScreenHeightDp(String screenHeightDp) {
         this.screenHeightDp = screenHeightDp;
     }
 
@@ -398,7 +398,7 @@ public class CRASHCONFIGURATION implements Serializable{
      *     The smallestScreenWidthDp
      */
     @JsonProperty("smallestScreenWidthDp")
-    public Long getSmallestScreenWidthDp() {
+    public String getSmallestScreenWidthDp() {
         return smallestScreenWidthDp;
     }
 
@@ -408,7 +408,7 @@ public class CRASHCONFIGURATION implements Serializable{
      *     The smallestScreenWidthDp
      */
     @JsonProperty("smallestScreenWidthDp")
-    public void setSmallestScreenWidthDp(Long smallestScreenWidthDp) {
+    public void setSmallestScreenWidthDp(String smallestScreenWidthDp) {
         this.smallestScreenWidthDp = smallestScreenWidthDp;
     }
 
@@ -438,7 +438,7 @@ public class CRASHCONFIGURATION implements Serializable{
      *     The seq
      */
     @JsonProperty("seq")
-    public Long getSeq() {
+    public String getSeq() {
         return seq;
     }
 
@@ -448,7 +448,7 @@ public class CRASHCONFIGURATION implements Serializable{
      *     The seq
      */
     @JsonProperty("seq")
-    public void setSeq(Long seq) {
+    public void setSeq(String seq) {
         this.seq = seq;
     }
 
@@ -478,7 +478,7 @@ public class CRASHCONFIGURATION implements Serializable{
      *     The mnc
      */
     @JsonProperty("mnc")
-    public Long getMnc() {
+    public String getMnc() {
         return mnc;
     }
 
@@ -488,7 +488,7 @@ public class CRASHCONFIGURATION implements Serializable{
      *     The mnc
      */
     @JsonProperty("mnc")
-    public void setMnc(Long mnc) {
+    public void setMnc(String mnc) {
         this.mnc = mnc;
     }
 
@@ -518,7 +518,7 @@ public class CRASHCONFIGURATION implements Serializable{
      *     The compatScreenWidthDp
      */
     @JsonProperty("compatScreenWidthDp")
-    public Long getCompatScreenWidthDp() {
+    public String getCompatScreenWidthDp() {
         return compatScreenWidthDp;
     }
 
@@ -528,7 +528,7 @@ public class CRASHCONFIGURATION implements Serializable{
      *     The compatScreenWidthDp
      */
     @JsonProperty("compatScreenWidthDp")
-    public void setCompatScreenWidthDp(Long compatScreenWidthDp) {
+    public void setCompatScreenWidthDp(String compatScreenWidthDp) {
         this.compatScreenWidthDp = compatScreenWidthDp;
     }
 

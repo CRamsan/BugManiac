@@ -77,7 +77,7 @@ public class ACRAReport {
     private String PACKAGENAME;
     @Index
     @JsonProperty("APP_VERSION_CODE")
-    private Long APPVERSIONCODE;
+    private String APPVERSIONCODE;
     @JsonProperty("CRASH_CONFIGURATION")
     private CRASHCONFIGURATION CRASHCONFIGURATION;
     @Index
@@ -102,7 +102,7 @@ public class ACRAReport {
     @JsonProperty("APP_VERSION_NAME")
     private String APPVERSIONNAME;
     @JsonProperty("AVAILABLE_MEM_SIZE")
-    private Long AVAILABLEMEMSIZE;
+    private String AVAILABLEMEMSIZE;
     @Index
     @JsonProperty("USER_APP_START_DATE")
     private String USERAPPSTARTDATE;
@@ -112,7 +112,7 @@ public class ACRAReport {
     @JsonProperty("BRAND")
     private String BRAND;
     @JsonProperty("TOTAL_MEM_SIZE")
-    private Long TOTALMEMSIZE;
+    private String TOTALMEMSIZE;
     @JsonProperty("FILE_PATH")
     private String FILEPATH;
     @JsonProperty("ENVIRONMENT")
@@ -301,7 +301,7 @@ public class ACRAReport {
      *     The APPVERSIONCODE
      */
     @JsonProperty("APP_VERSION_CODE")
-    public Long getAPPVERSIONCODE() {
+    public String getAPPVERSIONCODE() {
         return APPVERSIONCODE;
     }
 
@@ -311,7 +311,7 @@ public class ACRAReport {
      *     The APP_VERSION_CODE
      */
     @JsonProperty("APP_VERSION_CODE")
-    public void setAPPVERSIONCODE(Long APPVERSIONCODE) {
+    public void setAPPVERSIONCODE(String APPVERSIONCODE) {
         this.APPVERSIONCODE = APPVERSIONCODE;
     }
 
@@ -521,7 +521,7 @@ public class ACRAReport {
      *     The AVAILABLEMEMSIZE
      */
     @JsonProperty("AVAILABLE_MEM_SIZE")
-    public Long getAVAILABLEMEMSIZE() {
+    public String getAVAILABLEMEMSIZE() {
         return AVAILABLEMEMSIZE;
     }
 
@@ -531,7 +531,7 @@ public class ACRAReport {
      *     The AVAILABLE_MEM_SIZE
      */
     @JsonProperty("AVAILABLE_MEM_SIZE")
-    public void setAVAILABLEMEMSIZE(Long AVAILABLEMEMSIZE) {
+    public void setAVAILABLEMEMSIZE(String AVAILABLEMEMSIZE) {
         this.AVAILABLEMEMSIZE = AVAILABLEMEMSIZE;
     }
 
@@ -601,7 +601,7 @@ public class ACRAReport {
      *     The TOTALMEMSIZE
      */
     @JsonProperty("TOTAL_MEM_SIZE")
-    public Long getTOTALMEMSIZE() {
+    public String getTOTALMEMSIZE() {
         return TOTALMEMSIZE;
     }
 
@@ -611,7 +611,7 @@ public class ACRAReport {
      *     The TOTAL_MEM_SIZE
      */
     @JsonProperty("TOTAL_MEM_SIZE")
-    public void setTOTALMEMSIZE(Long TOTALMEMSIZE) {
+    public void setTOTALMEMSIZE(String TOTALMEMSIZE) {
         this.TOTALMEMSIZE = TOTALMEMSIZE;
     }
 

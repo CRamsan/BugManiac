@@ -29,8 +29,8 @@ public class Helpers {
 		out.close();
 	}
 
-	public static void respondWithMessage(PrintWriter out, String errorMessage) {
-		out.write(generateSuccess(errorMessage));
+	public static void respondWithMessage(PrintWriter out, String message) {
+		out.write(generateSuccess(message));
 		out.close();
 	}
 

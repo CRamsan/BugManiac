@@ -66,85 +66,85 @@ public class SETTINGSSYSTEM implements Serializable{
 	private static final long serialVersionUID = -6130098308226849665L;
 
 	@JsonProperty("CPU_FAST_ENABLE")
-    private Long CPUFASTENABLE;
+    private String CPUFASTENABLE;
     @JsonProperty("VOLUME_RING")
-    private Long VOLUMERING;
+    private String VOLUMERING;
     @JsonProperty("TIME_12_24")
-    private Long TIME1224;
+    private String TIME1224;
     @JsonProperty("HAPTIC_FEEDBACK_ENABLED")
-    private Long HAPTICFEEDBACKENABLED;
+    private String HAPTICFEEDBACKENABLED;
     @JsonProperty("BRIGHT_SYSTEM_MODE")
-    private Long BRIGHTSYSTEMMODE;
+    private String BRIGHTSYSTEMMODE;
     @JsonProperty("SCREEN_OFF_TIMEOUT")
-    private Long SCREENOFFTIMEOUT;
+    private String SCREENOFFTIMEOUT;
     @JsonProperty("HDMI_OUTPUT_MODE")
-    private Long HDMIOUTPUTMODE;
+    private String HDMIOUTPUTMODE;
     @JsonProperty("TEXT_SHOW_PASSWORD")
-    private Long TEXTSHOWPASSWORD;
+    private String TEXTSHOWPASSWORD;
     @JsonProperty("ROTATION_MODE_SET")
-    private Long ROTATIONMODESET;
+    private String ROTATIONMODESET;
     @JsonProperty("BOOT_FAST_ENABLE")
-    private Long BOOTFASTENABLE;
+    private String BOOTFASTENABLE;
     @JsonProperty("SCREEN_BRIGHTNESS_MODE")
-    private Long SCREENBRIGHTNESSMODE;
+    private String SCREENBRIGHTNESSMODE;
     @JsonProperty("POINTER_SPEED")
-    private Long POINTERSPEED;
+    private String POINTERSPEED;
     @JsonProperty("ALARM_ALERT")
     private String ALARMALERT;
     @JsonProperty("VOLUME_BLUETOOTH_SCO")
-    private Long VOLUMEBLUETOOTHSCO;
+    private String VOLUMEBLUETOOTHSCO;
     @JsonProperty("HDMI_FULL_SCREEN")
-    private Long HDMIFULLSCREEN;
+    private String HDMIFULLSCREEN;
     @JsonProperty("VOLUME_SYSTEM")
-    private Long VOLUMESYSTEM;
+    private String VOLUMESYSTEM;
     @JsonProperty("HEARING_AID")
-    private Long HEARINGAID;
+    private String HEARINGAID;
     @JsonProperty("ACCELEROMETER_COORDINATE")
     private String ACCELEROMETERCOORDINATE;
     @JsonProperty("TTY_MODE")
-    private Long TTYMODE;
+    private String TTYMODE;
     @JsonProperty("HIDE_ROTATION_LOCK_TOGGLE_FOR_ACCESSIBILITY")
-    private Long HIDEROTATIONLOCKTOGGLEFORACCESSIBILITY;
+    private String HIDEROTATIONLOCKTOGGLEFORACCESSIBILITY;
     @JsonProperty("NOTIFICATION_LIGHT_PULSE")
-    private Long NOTIFICATIONLIGHTPULSE;
+    private String NOTIFICATIONLIGHTPULSE;
     @JsonProperty("MUTE_STREAMS_AFFECTED")
-    private Long MUTESTREAMSAFFECTED;
+    private String MUTESTREAMSAFFECTED;
     @JsonProperty("MEDIA_BUTTON_RECEIVER")
     private String MEDIABUTTONRECEIVER;
     @JsonProperty("BRIGHTNESS_LIGHT_MODE")
-    private Long BRIGHTNESSLIGHTMODE;
+    private String BRIGHTNESSLIGHTMODE;
     @JsonProperty("ACCELEROMETER_ROTATION")
-    private Long ACCELEROMETERROTATION;
+    private String ACCELEROMETERROTATION;
     @JsonProperty("SOUND_EFFECTS_ENABLED")
-    private Long SOUNDEFFECTSENABLED;
+    private String SOUNDEFFECTSENABLED;
     @JsonProperty("DTMF_TONE_TYPE_WHEN_DIALING")
-    private Long DTMFTONETYPEWHENDIALING;
+    private String DTMFTONETYPEWHENDIALING;
     @JsonProperty("VOLUME_VOICE")
-    private Long VOLUMEVOICE;
+    private String VOLUMEVOICE;
     @JsonProperty("DTMF_TONE_WHEN_DIALING")
-    private Long DTMFTONEWHENDIALING;
+    private String DTMFTONEWHENDIALING;
     @JsonProperty("DATE_FORMAT")
     private String DATEFORMAT;
     @JsonProperty("VOLUME_ALARM")
-    private Long VOLUMEALARM;
+    private String VOLUMEALARM;
     @JsonProperty("SCREEN_BRIGHTNESS")
-    private Long SCREENBRIGHTNESS;
+    private String SCREENBRIGHTNESS;
     @JsonProperty("VOLUME_NOTIFICATION")
-    private Long VOLUMENOTIFICATION;
+    private String VOLUMENOTIFICATION;
     @JsonProperty("USER_ROTATION")
-    private Long USERROTATION;
+    private String USERROTATION;
     @JsonProperty("VIBRATE_WHEN_RINGING")
-    private Long VIBRATEWHENRINGING;
+    private String VIBRATEWHENRINGING;
     @JsonProperty("DISPLAY_ADAPTION_ENABLE")
-    private Long DISPLAYADAPTIONENABLE;
+    private String DISPLAYADAPTIONENABLE;
     @JsonProperty("NEXT_ALARM_FORMATTED")
     private String NEXTALARMFORMATTED;
     @JsonProperty("MODE_RINGER_STREAMS_AFFECTED")
-    private Long MODERINGERSTREAMSAFFECTED;
+    private String MODERINGERSTREAMSAFFECTED;
     @JsonProperty("VOLUME_MUSIC")
-    private Long VOLUMEMUSIC;
+    private String VOLUMEMUSIC;
     @JsonProperty("LOCKSCREEN_SOUNDS_ENABLED")
-    private Long LOCKSCREENSOUNDSENABLED;
+    private String LOCKSCREENSOUNDSENABLED;
 
     /**
      * 
@@ -152,7 +152,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The CPUFASTENABLE
      */
     @JsonProperty("CPU_FAST_ENABLE")
-    public Long getCPUFASTENABLE() {
+    public String getCPUFASTENABLE() {
         return CPUFASTENABLE;
     }
 
@@ -162,7 +162,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The CPU_FAST_ENABLE
      */
     @JsonProperty("CPU_FAST_ENABLE")
-    public void setCPUFASTENABLE(Long CPUFASTENABLE) {
+    public void setCPUFASTENABLE(String CPUFASTENABLE) {
         this.CPUFASTENABLE = CPUFASTENABLE;
     }
 
@@ -172,7 +172,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The VOLUMERING
      */
     @JsonProperty("VOLUME_RING")
-    public Long getVOLUMERING() {
+    public String getVOLUMERING() {
         return VOLUMERING;
     }
 
@@ -182,7 +182,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The VOLUME_RING
      */
     @JsonProperty("VOLUME_RING")
-    public void setVOLUMERING(Long VOLUMERING) {
+    public void setVOLUMERING(String VOLUMERING) {
         this.VOLUMERING = VOLUMERING;
     }
 
@@ -192,7 +192,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The TIME1224
      */
     @JsonProperty("TIME_12_24")
-    public Long getTIME1224() {
+    public String getTIME1224() {
         return TIME1224;
     }
 
@@ -202,7 +202,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The TIME_12_24
      */
     @JsonProperty("TIME_12_24")
-    public void setTIME1224(Long TIME1224) {
+    public void setTIME1224(String TIME1224) {
         this.TIME1224 = TIME1224;
     }
 
@@ -212,7 +212,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The HAPTICFEEDBACKENABLED
      */
     @JsonProperty("HAPTIC_FEEDBACK_ENABLED")
-    public Long getHAPTICFEEDBACKENABLED() {
+    public String getHAPTICFEEDBACKENABLED() {
         return HAPTICFEEDBACKENABLED;
     }
 
@@ -222,7 +222,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The HAPTIC_FEEDBACK_ENABLED
      */
     @JsonProperty("HAPTIC_FEEDBACK_ENABLED")
-    public void setHAPTICFEEDBACKENABLED(Long HAPTICFEEDBACKENABLED) {
+    public void setHAPTICFEEDBACKENABLED(String HAPTICFEEDBACKENABLED) {
         this.HAPTICFEEDBACKENABLED = HAPTICFEEDBACKENABLED;
     }
 
@@ -232,7 +232,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The BRIGHTSYSTEMMODE
      */
     @JsonProperty("BRIGHT_SYSTEM_MODE")
-    public Long getBRIGHTSYSTEMMODE() {
+    public String getBRIGHTSYSTEMMODE() {
         return BRIGHTSYSTEMMODE;
     }
 
@@ -242,7 +242,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The BRIGHT_SYSTEM_MODE
      */
     @JsonProperty("BRIGHT_SYSTEM_MODE")
-    public void setBRIGHTSYSTEMMODE(Long BRIGHTSYSTEMMODE) {
+    public void setBRIGHTSYSTEMMODE(String BRIGHTSYSTEMMODE) {
         this.BRIGHTSYSTEMMODE = BRIGHTSYSTEMMODE;
     }
 
@@ -252,7 +252,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The SCREENOFFTIMEOUT
      */
     @JsonProperty("SCREEN_OFF_TIMEOUT")
-    public Long getSCREENOFFTIMEOUT() {
+    public String getSCREENOFFTIMEOUT() {
         return SCREENOFFTIMEOUT;
     }
 
@@ -262,7 +262,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The SCREEN_OFF_TIMEOUT
      */
     @JsonProperty("SCREEN_OFF_TIMEOUT")
-    public void setSCREENOFFTIMEOUT(Long SCREENOFFTIMEOUT) {
+    public void setSCREENOFFTIMEOUT(String SCREENOFFTIMEOUT) {
         this.SCREENOFFTIMEOUT = SCREENOFFTIMEOUT;
     }
 
@@ -272,7 +272,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The HDMIOUTPUTMODE
      */
     @JsonProperty("HDMI_OUTPUT_MODE")
-    public Long getHDMIOUTPUTMODE() {
+    public String getHDMIOUTPUTMODE() {
         return HDMIOUTPUTMODE;
     }
 
@@ -282,7 +282,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The HDMI_OUTPUT_MODE
      */
     @JsonProperty("HDMI_OUTPUT_MODE")
-    public void setHDMIOUTPUTMODE(Long HDMIOUTPUTMODE) {
+    public void setHDMIOUTPUTMODE(String HDMIOUTPUTMODE) {
         this.HDMIOUTPUTMODE = HDMIOUTPUTMODE;
     }
 
@@ -292,7 +292,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The TEXTSHOWPASSWORD
      */
     @JsonProperty("TEXT_SHOW_PASSWORD")
-    public Long getTEXTSHOWPASSWORD() {
+    public String getTEXTSHOWPASSWORD() {
         return TEXTSHOWPASSWORD;
     }
 
@@ -302,7 +302,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The TEXT_SHOW_PASSWORD
      */
     @JsonProperty("TEXT_SHOW_PASSWORD")
-    public void setTEXTSHOWPASSWORD(Long TEXTSHOWPASSWORD) {
+    public void setTEXTSHOWPASSWORD(String TEXTSHOWPASSWORD) {
         this.TEXTSHOWPASSWORD = TEXTSHOWPASSWORD;
     }
 
@@ -312,7 +312,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The ROTATIONMODESET
      */
     @JsonProperty("ROTATION_MODE_SET")
-    public Long getROTATIONMODESET() {
+    public String getROTATIONMODESET() {
         return ROTATIONMODESET;
     }
 
@@ -322,7 +322,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The ROTATION_MODE_SET
      */
     @JsonProperty("ROTATION_MODE_SET")
-    public void setROTATIONMODESET(Long ROTATIONMODESET) {
+    public void setROTATIONMODESET(String ROTATIONMODESET) {
         this.ROTATIONMODESET = ROTATIONMODESET;
     }
 
@@ -332,7 +332,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The BOOTFASTENABLE
      */
     @JsonProperty("BOOT_FAST_ENABLE")
-    public Long getBOOTFASTENABLE() {
+    public String getBOOTFASTENABLE() {
         return BOOTFASTENABLE;
     }
 
@@ -342,7 +342,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The BOOT_FAST_ENABLE
      */
     @JsonProperty("BOOT_FAST_ENABLE")
-    public void setBOOTFASTENABLE(Long BOOTFASTENABLE) {
+    public void setBOOTFASTENABLE(String BOOTFASTENABLE) {
         this.BOOTFASTENABLE = BOOTFASTENABLE;
     }
 
@@ -352,7 +352,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The SCREENBRIGHTNESSMODE
      */
     @JsonProperty("SCREEN_BRIGHTNESS_MODE")
-    public Long getSCREENBRIGHTNESSMODE() {
+    public String getSCREENBRIGHTNESSMODE() {
         return SCREENBRIGHTNESSMODE;
     }
 
@@ -362,7 +362,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The SCREEN_BRIGHTNESS_MODE
      */
     @JsonProperty("SCREEN_BRIGHTNESS_MODE")
-    public void setSCREENBRIGHTNESSMODE(Long SCREENBRIGHTNESSMODE) {
+    public void setSCREENBRIGHTNESSMODE(String SCREENBRIGHTNESSMODE) {
         this.SCREENBRIGHTNESSMODE = SCREENBRIGHTNESSMODE;
     }
 
@@ -372,7 +372,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The POINTERSPEED
      */
     @JsonProperty("POINTER_SPEED")
-    public Long getPOINTERSPEED() {
+    public String getPOINTERSPEED() {
         return POINTERSPEED;
     }
 
@@ -382,7 +382,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The POINTER_SPEED
      */
     @JsonProperty("POINTER_SPEED")
-    public void setPOINTERSPEED(Long POINTERSPEED) {
+    public void setPOINTERSPEED(String POINTERSPEED) {
         this.POINTERSPEED = POINTERSPEED;
     }
 
@@ -412,7 +412,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The VOLUMEBLUETOOTHSCO
      */
     @JsonProperty("VOLUME_BLUETOOTH_SCO")
-    public Long getVOLUMEBLUETOOTHSCO() {
+    public String getVOLUMEBLUETOOTHSCO() {
         return VOLUMEBLUETOOTHSCO;
     }
 
@@ -422,7 +422,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The VOLUME_BLUETOOTH_SCO
      */
     @JsonProperty("VOLUME_BLUETOOTH_SCO")
-    public void setVOLUMEBLUETOOTHSCO(Long VOLUMEBLUETOOTHSCO) {
+    public void setVOLUMEBLUETOOTHSCO(String VOLUMEBLUETOOTHSCO) {
         this.VOLUMEBLUETOOTHSCO = VOLUMEBLUETOOTHSCO;
     }
 
@@ -432,7 +432,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The HDMIFULLSCREEN
      */
     @JsonProperty("HDMI_FULL_SCREEN")
-    public Long getHDMIFULLSCREEN() {
+    public String getHDMIFULLSCREEN() {
         return HDMIFULLSCREEN;
     }
 
@@ -442,7 +442,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The HDMI_FULL_SCREEN
      */
     @JsonProperty("HDMI_FULL_SCREEN")
-    public void setHDMIFULLSCREEN(Long HDMIFULLSCREEN) {
+    public void setHDMIFULLSCREEN(String HDMIFULLSCREEN) {
         this.HDMIFULLSCREEN = HDMIFULLSCREEN;
     }
 
@@ -452,7 +452,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The VOLUMESYSTEM
      */
     @JsonProperty("VOLUME_SYSTEM")
-    public Long getVOLUMESYSTEM() {
+    public String getVOLUMESYSTEM() {
         return VOLUMESYSTEM;
     }
 
@@ -462,7 +462,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The VOLUME_SYSTEM
      */
     @JsonProperty("VOLUME_SYSTEM")
-    public void setVOLUMESYSTEM(Long VOLUMESYSTEM) {
+    public void setVOLUMESYSTEM(String VOLUMESYSTEM) {
         this.VOLUMESYSTEM = VOLUMESYSTEM;
     }
 
@@ -472,7 +472,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The HEARINGAID
      */
     @JsonProperty("HEARING_AID")
-    public Long getHEARINGAID() {
+    public String getHEARINGAID() {
         return HEARINGAID;
     }
 
@@ -482,7 +482,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The HEARING_AID
      */
     @JsonProperty("HEARING_AID")
-    public void setHEARINGAID(Long HEARINGAID) {
+    public void setHEARINGAID(String HEARINGAID) {
         this.HEARINGAID = HEARINGAID;
     }
 
@@ -512,7 +512,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The TTYMODE
      */
     @JsonProperty("TTY_MODE")
-    public Long getTTYMODE() {
+    public String getTTYMODE() {
         return TTYMODE;
     }
 
@@ -522,7 +522,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The TTY_MODE
      */
     @JsonProperty("TTY_MODE")
-    public void setTTYMODE(Long TTYMODE) {
+    public void setTTYMODE(String TTYMODE) {
         this.TTYMODE = TTYMODE;
     }
 
@@ -532,7 +532,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The HIDEROTATIONLOCKTOGGLEFORACCESSIBILITY
      */
     @JsonProperty("HIDE_ROTATION_LOCK_TOGGLE_FOR_ACCESSIBILITY")
-    public Long getHIDEROTATIONLOCKTOGGLEFORACCESSIBILITY() {
+    public String getHIDEROTATIONLOCKTOGGLEFORACCESSIBILITY() {
         return HIDEROTATIONLOCKTOGGLEFORACCESSIBILITY;
     }
 
@@ -542,7 +542,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The HIDE_ROTATION_LOCK_TOGGLE_FOR_ACCESSIBILITY
      */
     @JsonProperty("HIDE_ROTATION_LOCK_TOGGLE_FOR_ACCESSIBILITY")
-    public void setHIDEROTATIONLOCKTOGGLEFORACCESSIBILITY(Long HIDEROTATIONLOCKTOGGLEFORACCESSIBILITY) {
+    public void setHIDEROTATIONLOCKTOGGLEFORACCESSIBILITY(String HIDEROTATIONLOCKTOGGLEFORACCESSIBILITY) {
         this.HIDEROTATIONLOCKTOGGLEFORACCESSIBILITY = HIDEROTATIONLOCKTOGGLEFORACCESSIBILITY;
     }
 
@@ -552,7 +552,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The NOTIFICATIONLIGHTPULSE
      */
     @JsonProperty("NOTIFICATION_LIGHT_PULSE")
-    public Long getNOTIFICATIONLIGHTPULSE() {
+    public String getNOTIFICATIONLIGHTPULSE() {
         return NOTIFICATIONLIGHTPULSE;
     }
 
@@ -562,7 +562,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The NOTIFICATION_LIGHT_PULSE
      */
     @JsonProperty("NOTIFICATION_LIGHT_PULSE")
-    public void setNOTIFICATIONLIGHTPULSE(Long NOTIFICATIONLIGHTPULSE) {
+    public void setNOTIFICATIONLIGHTPULSE(String NOTIFICATIONLIGHTPULSE) {
         this.NOTIFICATIONLIGHTPULSE = NOTIFICATIONLIGHTPULSE;
     }
 
@@ -572,7 +572,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The MUTESTREAMSAFFECTED
      */
     @JsonProperty("MUTE_STREAMS_AFFECTED")
-    public Long getMUTESTREAMSAFFECTED() {
+    public String getMUTESTREAMSAFFECTED() {
         return MUTESTREAMSAFFECTED;
     }
 
@@ -582,7 +582,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The MUTE_STREAMS_AFFECTED
      */
     @JsonProperty("MUTE_STREAMS_AFFECTED")
-    public void setMUTESTREAMSAFFECTED(Long MUTESTREAMSAFFECTED) {
+    public void setMUTESTREAMSAFFECTED(String MUTESTREAMSAFFECTED) {
         this.MUTESTREAMSAFFECTED = MUTESTREAMSAFFECTED;
     }
 
@@ -612,7 +612,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The BRIGHTNESSLIGHTMODE
      */
     @JsonProperty("BRIGHTNESS_LIGHT_MODE")
-    public Long getBRIGHTNESSLIGHTMODE() {
+    public String getBRIGHTNESSLIGHTMODE() {
         return BRIGHTNESSLIGHTMODE;
     }
 
@@ -622,7 +622,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The BRIGHTNESS_LIGHT_MODE
      */
     @JsonProperty("BRIGHTNESS_LIGHT_MODE")
-    public void setBRIGHTNESSLIGHTMODE(Long BRIGHTNESSLIGHTMODE) {
+    public void setBRIGHTNESSLIGHTMODE(String BRIGHTNESSLIGHTMODE) {
         this.BRIGHTNESSLIGHTMODE = BRIGHTNESSLIGHTMODE;
     }
 
@@ -632,7 +632,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The ACCELEROMETERROTATION
      */
     @JsonProperty("ACCELEROMETER_ROTATION")
-    public Long getACCELEROMETERROTATION() {
+    public String getACCELEROMETERROTATION() {
         return ACCELEROMETERROTATION;
     }
 
@@ -642,7 +642,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The ACCELEROMETER_ROTATION
      */
     @JsonProperty("ACCELEROMETER_ROTATION")
-    public void setACCELEROMETERROTATION(Long ACCELEROMETERROTATION) {
+    public void setACCELEROMETERROTATION(String ACCELEROMETERROTATION) {
         this.ACCELEROMETERROTATION = ACCELEROMETERROTATION;
     }
 
@@ -652,7 +652,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The SOUNDEFFECTSENABLED
      */
     @JsonProperty("SOUND_EFFECTS_ENABLED")
-    public Long getSOUNDEFFECTSENABLED() {
+    public String getSOUNDEFFECTSENABLED() {
         return SOUNDEFFECTSENABLED;
     }
 
@@ -662,7 +662,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The SOUND_EFFECTS_ENABLED
      */
     @JsonProperty("SOUND_EFFECTS_ENABLED")
-    public void setSOUNDEFFECTSENABLED(Long SOUNDEFFECTSENABLED) {
+    public void setSOUNDEFFECTSENABLED(String SOUNDEFFECTSENABLED) {
         this.SOUNDEFFECTSENABLED = SOUNDEFFECTSENABLED;
     }
 
@@ -672,7 +672,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The DTMFTONETYPEWHENDIALING
      */
     @JsonProperty("DTMF_TONE_TYPE_WHEN_DIALING")
-    public Long getDTMFTONETYPEWHENDIALING() {
+    public String getDTMFTONETYPEWHENDIALING() {
         return DTMFTONETYPEWHENDIALING;
     }
 
@@ -682,7 +682,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The DTMF_TONE_TYPE_WHEN_DIALING
      */
     @JsonProperty("DTMF_TONE_TYPE_WHEN_DIALING")
-    public void setDTMFTONETYPEWHENDIALING(Long DTMFTONETYPEWHENDIALING) {
+    public void setDTMFTONETYPEWHENDIALING(String DTMFTONETYPEWHENDIALING) {
         this.DTMFTONETYPEWHENDIALING = DTMFTONETYPEWHENDIALING;
     }
 
@@ -692,7 +692,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The VOLUMEVOICE
      */
     @JsonProperty("VOLUME_VOICE")
-    public Long getVOLUMEVOICE() {
+    public String getVOLUMEVOICE() {
         return VOLUMEVOICE;
     }
 
@@ -702,7 +702,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The VOLUME_VOICE
      */
     @JsonProperty("VOLUME_VOICE")
-    public void setVOLUMEVOICE(Long VOLUMEVOICE) {
+    public void setVOLUMEVOICE(String VOLUMEVOICE) {
         this.VOLUMEVOICE = VOLUMEVOICE;
     }
 
@@ -712,7 +712,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The DTMFTONEWHENDIALING
      */
     @JsonProperty("DTMF_TONE_WHEN_DIALING")
-    public Long getDTMFTONEWHENDIALING() {
+    public String getDTMFTONEWHENDIALING() {
         return DTMFTONEWHENDIALING;
     }
 
@@ -722,7 +722,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The DTMF_TONE_WHEN_DIALING
      */
     @JsonProperty("DTMF_TONE_WHEN_DIALING")
-    public void setDTMFTONEWHENDIALING(Long DTMFTONEWHENDIALING) {
+    public void setDTMFTONEWHENDIALING(String DTMFTONEWHENDIALING) {
         this.DTMFTONEWHENDIALING = DTMFTONEWHENDIALING;
     }
 
@@ -752,7 +752,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The VOLUMEALARM
      */
     @JsonProperty("VOLUME_ALARM")
-    public Long getVOLUMEALARM() {
+    public String getVOLUMEALARM() {
         return VOLUMEALARM;
     }
 
@@ -762,7 +762,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The VOLUME_ALARM
      */
     @JsonProperty("VOLUME_ALARM")
-    public void setVOLUMEALARM(Long VOLUMEALARM) {
+    public void setVOLUMEALARM(String VOLUMEALARM) {
         this.VOLUMEALARM = VOLUMEALARM;
     }
 
@@ -772,7 +772,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The SCREENBRIGHTNESS
      */
     @JsonProperty("SCREEN_BRIGHTNESS")
-    public Long getSCREENBRIGHTNESS() {
+    public String getSCREENBRIGHTNESS() {
         return SCREENBRIGHTNESS;
     }
 
@@ -782,7 +782,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The SCREEN_BRIGHTNESS
      */
     @JsonProperty("SCREEN_BRIGHTNESS")
-    public void setSCREENBRIGHTNESS(Long SCREENBRIGHTNESS) {
+    public void setSCREENBRIGHTNESS(String SCREENBRIGHTNESS) {
         this.SCREENBRIGHTNESS = SCREENBRIGHTNESS;
     }
 
@@ -792,7 +792,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The VOLUMENOTIFICATION
      */
     @JsonProperty("VOLUME_NOTIFICATION")
-    public Long getVOLUMENOTIFICATION() {
+    public String getVOLUMENOTIFICATION() {
         return VOLUMENOTIFICATION;
     }
 
@@ -802,7 +802,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The VOLUME_NOTIFICATION
      */
     @JsonProperty("VOLUME_NOTIFICATION")
-    public void setVOLUMENOTIFICATION(Long VOLUMENOTIFICATION) {
+    public void setVOLUMENOTIFICATION(String VOLUMENOTIFICATION) {
         this.VOLUMENOTIFICATION = VOLUMENOTIFICATION;
     }
 
@@ -812,7 +812,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The USERROTATION
      */
     @JsonProperty("USER_ROTATION")
-    public Long getUSERROTATION() {
+    public String getUSERROTATION() {
         return USERROTATION;
     }
 
@@ -822,7 +822,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The USER_ROTATION
      */
     @JsonProperty("USER_ROTATION")
-    public void setUSERROTATION(Long USERROTATION) {
+    public void setUSERROTATION(String USERROTATION) {
         this.USERROTATION = USERROTATION;
     }
 
@@ -832,7 +832,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The VIBRATEWHENRINGING
      */
     @JsonProperty("VIBRATE_WHEN_RINGING")
-    public Long getVIBRATEWHENRINGING() {
+    public String getVIBRATEWHENRINGING() {
         return VIBRATEWHENRINGING;
     }
 
@@ -842,7 +842,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The VIBRATE_WHEN_RINGING
      */
     @JsonProperty("VIBRATE_WHEN_RINGING")
-    public void setVIBRATEWHENRINGING(Long VIBRATEWHENRINGING) {
+    public void setVIBRATEWHENRINGING(String VIBRATEWHENRINGING) {
         this.VIBRATEWHENRINGING = VIBRATEWHENRINGING;
     }
 
@@ -852,7 +852,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The DISPLAYADAPTIONENABLE
      */
     @JsonProperty("DISPLAY_ADAPTION_ENABLE")
-    public Long getDISPLAYADAPTIONENABLE() {
+    public String getDISPLAYADAPTIONENABLE() {
         return DISPLAYADAPTIONENABLE;
     }
 
@@ -862,7 +862,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The DISPLAY_ADAPTION_ENABLE
      */
     @JsonProperty("DISPLAY_ADAPTION_ENABLE")
-    public void setDISPLAYADAPTIONENABLE(Long DISPLAYADAPTIONENABLE) {
+    public void setDISPLAYADAPTIONENABLE(String DISPLAYADAPTIONENABLE) {
         this.DISPLAYADAPTIONENABLE = DISPLAYADAPTIONENABLE;
     }
 
@@ -892,7 +892,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The MODERINGERSTREAMSAFFECTED
      */
     @JsonProperty("MODE_RINGER_STREAMS_AFFECTED")
-    public Long getMODERINGERSTREAMSAFFECTED() {
+    public String getMODERINGERSTREAMSAFFECTED() {
         return MODERINGERSTREAMSAFFECTED;
     }
 
@@ -902,7 +902,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The MODE_RINGER_STREAMS_AFFECTED
      */
     @JsonProperty("MODE_RINGER_STREAMS_AFFECTED")
-    public void setMODERINGERSTREAMSAFFECTED(Long MODERINGERSTREAMSAFFECTED) {
+    public void setMODERINGERSTREAMSAFFECTED(String MODERINGERSTREAMSAFFECTED) {
         this.MODERINGERSTREAMSAFFECTED = MODERINGERSTREAMSAFFECTED;
     }
 
@@ -912,7 +912,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The VOLUMEMUSIC
      */
     @JsonProperty("VOLUME_MUSIC")
-    public Long getVOLUMEMUSIC() {
+    public String getVOLUMEMUSIC() {
         return VOLUMEMUSIC;
     }
 
@@ -922,7 +922,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The VOLUME_MUSIC
      */
     @JsonProperty("VOLUME_MUSIC")
-    public void setVOLUMEMUSIC(Long VOLUMEMUSIC) {
+    public void setVOLUMEMUSIC(String VOLUMEMUSIC) {
         this.VOLUMEMUSIC = VOLUMEMUSIC;
     }
 
@@ -932,7 +932,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The LOCKSCREENSOUNDSENABLED
      */
     @JsonProperty("LOCKSCREEN_SOUNDS_ENABLED")
-    public Long getLOCKSCREENSOUNDSENABLED() {
+    public String getLOCKSCREENSOUNDSENABLED() {
         return LOCKSCREENSOUNDSENABLED;
     }
 
@@ -942,7 +942,7 @@ public class SETTINGSSYSTEM implements Serializable{
      *     The LOCKSCREEN_SOUNDS_ENABLED
      */
     @JsonProperty("LOCKSCREEN_SOUNDS_ENABLED")
-    public void setLOCKSCREENSOUNDSENABLED(Long LOCKSCREENSOUNDSENABLED) {
+    public void setLOCKSCREENSOUNDSENABLED(String LOCKSCREENSOUNDSENABLED) {
         this.LOCKSCREENSOUNDSENABLED = LOCKSCREENSOUNDSENABLED;
     }
 

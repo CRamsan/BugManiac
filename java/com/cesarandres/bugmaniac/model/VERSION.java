@@ -38,11 +38,11 @@ public class VERSION implements Serializable{
     @JsonProperty("INCREMENTAL")
     private String INCREMENTAL;
     @JsonProperty("SDK_INT")
-    private Long SDKINT;
+    private String SDKINT;
     @JsonProperty("RESOURCES_SDK_INT")
-    private Long RESOURCESSDKINT;
+    private String RESOURCESSDKINT;
     @JsonProperty("SDK")
-    private Long SDK;
+    private String SDK;
 
     /**
      * 
@@ -110,7 +110,7 @@ public class VERSION implements Serializable{
      *     The SDKINT
      */
     @JsonProperty("SDK_INT")
-    public Long getSDKINT() {
+    public String getSDKINT() {
         return SDKINT;
     }
 
@@ -120,7 +120,7 @@ public class VERSION implements Serializable{
      *     The SDK_INT
      */
     @JsonProperty("SDK_INT")
-    public void setSDKINT(Long SDKINT) {
+    public void setSDKINT(String SDKINT) {
         this.SDKINT = SDKINT;
     }
 
@@ -130,7 +130,7 @@ public class VERSION implements Serializable{
      *     The RESOURCESSDKINT
      */
     @JsonProperty("RESOURCES_SDK_INT")
-    public Long getRESOURCESSDKINT() {
+    public String getRESOURCESSDKINT() {
         return RESOURCESSDKINT;
     }
 
@@ -140,7 +140,7 @@ public class VERSION implements Serializable{
      *     The RESOURCES_SDK_INT
      */
     @JsonProperty("RESOURCES_SDK_INT")
-    public void setRESOURCESSDKINT(Long RESOURCESSDKINT) {
+    public void setRESOURCESSDKINT(String RESOURCESSDKINT) {
         this.RESOURCESSDKINT = RESOURCESSDKINT;
     }
 
@@ -150,7 +150,7 @@ public class VERSION implements Serializable{
      *     The SDK
      */
     @JsonProperty("SDK")
-    public Long getSDK() {
+    public String getSDK() {
         return SDK;
     }
 
@@ -160,7 +160,7 @@ public class VERSION implements Serializable{
      *     The SDK
      */
     @JsonProperty("SDK")
-    public void setSDK(Long SDK) {
+    public void setSDK(String SDK) {
         this.SDK = SDK;
     }
 

@@ -39,17 +39,17 @@ public class SCREEN implements Serializable{
 	private static final long serialVersionUID = 1271650189121018286L;
 
 	@JsonProperty("pixelFormat")
-    private Long pixelFormat;
+    private String pixelFormat;
     @JsonProperty("orientation")
-    private Long orientation;
+    private String orientation;
     @JsonProperty("height")
-    private Long height;
+    private String height;
     @JsonProperty("flags")
     private String flags;
     @JsonProperty("rotation")
     private String rotation;
     @JsonProperty("width")
-    private Long width;
+    private String width;
     @JsonProperty("name")
     private String name;
     @JsonProperty("rectSize")
@@ -71,7 +71,7 @@ public class SCREEN implements Serializable{
      *     The pixelFormat
      */
     @JsonProperty("pixelFormat")
-    public Long getPixelFormat() {
+    public String getPixelFormat() {
         return pixelFormat;
     }
 
@@ -81,7 +81,7 @@ public class SCREEN implements Serializable{
      *     The pixelFormat
      */
     @JsonProperty("pixelFormat")
-    public void setPixelFormat(Long pixelFormat) {
+    public void setPixelFormat(String pixelFormat) {
         this.pixelFormat = pixelFormat;
     }
 
@@ -91,7 +91,7 @@ public class SCREEN implements Serializable{
      *     The orientation
      */
     @JsonProperty("orientation")
-    public Long getOrientation() {
+    public String getOrientation() {
         return orientation;
     }
 
@@ -101,7 +101,7 @@ public class SCREEN implements Serializable{
      *     The orientation
      */
     @JsonProperty("orientation")
-    public void setOrientation(Long orientation) {
+    public void setOrientation(String orientation) {
         this.orientation = orientation;
     }
 
@@ -111,7 +111,7 @@ public class SCREEN implements Serializable{
      *     The height
      */
     @JsonProperty("height")
-    public Long getHeight() {
+    public String getHeight() {
         return height;
     }
 
@@ -121,7 +121,7 @@ public class SCREEN implements Serializable{
      *     The height
      */
     @JsonProperty("height")
-    public void setHeight(Long height) {
+    public void setHeight(String height) {
         this.height = height;
     }
 
@@ -171,7 +171,7 @@ public class SCREEN implements Serializable{
      *     The width
      */
     @JsonProperty("width")
-    public Long getWidth() {
+    public String getWidth() {
         return width;
     }
 
@@ -181,7 +181,7 @@ public class SCREEN implements Serializable{
      *     The width
      */
     @JsonProperty("width")
-    public void setWidth(Long width) {
+    public void setWidth(String width) {
         this.width = width;
     }
 

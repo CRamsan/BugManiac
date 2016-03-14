@@ -82,111 +82,111 @@ public class SETTINGSGLOBAL implements Serializable{
 	@JsonProperty("UNLOCK_SOUND")
     private String UNLOCKSOUND;
     @JsonProperty("SET_INSTALL_LOCATION")
-    private Long SETINSTALLLOCATION;
+    private String SETINSTALLLOCATION;
     @JsonProperty("CAR_DOCK_SOUND")
     private String CARDOCKSOUND;
     @JsonProperty("CERT_PIN_UPDATE_CONTENT_URL")
     private String CERTPINUPDATECONTENTURL;
     @JsonProperty("BLUETOOTH_ON")
-    private Long BLUETOOTHON;
+    private String BLUETOOTHON;
     @JsonProperty("DOCK_AUDIO_MEDIA_ENABLED")
-    private Long DOCKAUDIOMEDIAENABLED;
+    private String DOCKAUDIOMEDIAENABLED;
     @JsonProperty("CDMA_SUBSCRIPTION_MODE")
-    private Long CDMASUBSCRIPTIONMODE;
+    private String CDMASUBSCRIPTIONMODE;
     @JsonProperty("USB_MASS_STORAGE_ENABLED")
-    private Long USBMASSSTORAGEENABLED;
+    private String USBMASSSTORAGEENABLED;
     @JsonProperty("EMERGENCY_TONE")
-    private Long EMERGENCYTONE;
+    private String EMERGENCYTONE;
     @JsonProperty("NETWORK_PREFERENCE")
-    private Long NETWORKPREFERENCE;
+    private String NETWORKPREFERENCE;
     @JsonProperty("LOCK_SOUND")
     private String LOCKSOUND;
     @JsonProperty("ETHERNET_MODE")
-    private Long ETHERNETMODE;
+    private String ETHERNETMODE;
     @JsonProperty("WIFI_SCAN_ALWAYS_AVAILABLE")
-    private Long WIFISCANALWAYSAVAILABLE;
+    private String WIFISCANALWAYSAVAILABLE;
     @JsonProperty("WIFI_ON")
-    private Long WIFION;
+    private String WIFION;
     @JsonProperty("DESK_UNDOCK_SOUND")
     private String DESKUNDOCKSOUND;
     @JsonProperty("DESK_DOCK_SOUND")
     private String DESKDOCKSOUND;
     @JsonProperty("WIFI_DISPLAY_ON")
-    private Long WIFIDISPLAYON;
+    private String WIFIDISPLAYON;
     @JsonProperty("CAR_UNDOCK_SOUND")
     private String CARUNDOCKSOUND;
     @JsonProperty("WIFI_SLEEP_POLICY")
-    private Long WIFISLEEPPOLICY;
+    private String WIFISLEEPPOLICY;
     @JsonProperty("WIFI_WATCHDOG_ON")
-    private Long WIFIWATCHDOGON;
+    private String WIFIWATCHDOGON;
     @JsonProperty("SEND_ACTION_APP_ERROR")
-    private Long SENDACTIONAPPERROR;
+    private String SENDACTIONAPPERROR;
     @JsonProperty("SMS_SHORT_CODES_UPDATE_METADATA_URL")
     private String SMSSHORTCODESUPDATEMETADATAURL;
     @JsonProperty("PREFERRED_NETWORK_MODE")
-    private Long PREFERREDNETWORKMODE;
+    private String PREFERREDNETWORKMODE;
     @JsonProperty("AUTO_TIME")
-    private Long AUTOTIME;
+    private String AUTOTIME;
     @JsonProperty("WEB_AUTOFILL_QUERY_URL")
     private String WEBAUTOFILLQUERYURL;
     @JsonProperty("AUDIO_SAFE_VOLUME_STATE")
-    private Long AUDIOSAFEVOLUMESTATE;
+    private String AUDIOSAFEVOLUMESTATE;
     @JsonProperty("AIRPLANE_MODE_ON")
-    private Long AIRPLANEMODEON;
+    private String AIRPLANEMODEON;
     @JsonProperty("WIRELESS_CHARGING_STARTED_SOUND")
     private String WIRELESSCHARGINGSTARTEDSOUND;
     @JsonProperty("WIFI_MAX_DHCP_RETRY_COUNT")
-    private Long WIFIMAXDHCPRETRYCOUNT;
+    private String WIFIMAXDHCPRETRYCOUNT;
     @JsonProperty("POWER_SOUNDS_ENABLED")
-    private Long POWERSOUNDSENABLED;
+    private String POWERSOUNDSENABLED;
     @JsonProperty("MODE_RINGER")
-    private Long MODERINGER;
+    private String MODERINGER;
     @JsonProperty("DOCK_SOUNDS_ENABLED")
-    private Long DOCKSOUNDSENABLED;
+    private String DOCKSOUNDSENABLED;
     @JsonProperty("ASSISTED_GPS_ENABLED")
-    private Long ASSISTEDGPSENABLED;
+    private String ASSISTEDGPSENABLED;
     @JsonProperty("CDMA_CELL_BROADCAST_SMS")
-    private Long CDMACELLBROADCASTSMS;
+    private String CDMACELLBROADCASTSMS;
     @JsonProperty("AIRPLANE_MODE_ON_FAST_BOOT")
-    private Long AIRPLANEMODEONFASTBOOT;
+    private String AIRPLANEMODEONFASTBOOT;
     @JsonProperty("WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON")
-    private Long WIFINETWORKSAVAILABLENOTIFICATIONON;
+    private String WIFINETWORKSAVAILABLENOTIFICATIONON;
     @JsonProperty("ETHERNET_ON")
-    private Long ETHERNETON;
+    private String ETHERNETON;
     @JsonProperty("AIRPLANE_MODE_TOGGLEABLE_RADIOS")
     private String AIRPLANEMODETOGGLEABLERADIOS;
     @JsonProperty("DATA_ROAMING")
-    private Long DATAROAMING;
+    private String DATAROAMING;
     @JsonProperty("DEVICE_PROVISIONED")
-    private Long DEVICEPROVISIONED;
+    private String DEVICEPROVISIONED;
     @JsonProperty("AIRPLANE_MODE_RADIOS")
     private String AIRPLANEMODERADIOS;
     @JsonProperty("AUTO_TIME_ZONE")
-    private Long AUTOTIMEZONE;
+    private String AUTOTIMEZONE;
     @JsonProperty("PACKAGE_VERIFIER_ENABLE")
-    private Long PACKAGEVERIFIERENABLE;
+    private String PACKAGEVERIFIERENABLE;
     @JsonProperty("SMS_SHORT_CODES_UPDATE_CONTENT_URL")
     private String SMSSHORTCODESUPDATECONTENTURL;
     @JsonProperty("LOW_BATTERY_SOUND")
     private String LOWBATTERYSOUND;
     @JsonProperty("DEFAULT_INSTALL_LOCATION")
-    private Long DEFAULTINSTALLLOCATION;
+    private String DEFAULTINSTALLLOCATION;
     @JsonProperty("MOBILE_DATA")
-    private Long MOBILEDATA;
+    private String MOBILEDATA;
     @JsonProperty("INSTALL_NON_MARKET_APPS")
-    private Long INSTALLNONMARKETAPPS;
+    private String INSTALLNONMARKETAPPS;
     @JsonProperty("CALL_AUTO_RETRY")
-    private Long CALLAUTORETRY;
+    private String CALLAUTORETRY;
     @JsonProperty("LOW_BATTERY_SOUND_TIMEOUT")
-    private Long LOWBATTERYSOUNDTIMEOUT;
+    private String LOWBATTERYSOUNDTIMEOUT;
     @JsonProperty("NETSTATS_ENABLED")
-    private Long NETSTATSENABLED;
+    private String NETSTATSENABLED;
     @JsonProperty("CERT_PIN_UPDATE_METADATA_URL")
     private String CERTPINUPDATEMETADATAURL;
     @JsonProperty("STAY_ON_WHILE_PLUGGED_IN")
-    private Long STAYONWHILEPLUGGEDIN;
+    private String STAYONWHILEPLUGGEDIN;
     @JsonProperty("ADB_ENABLED")
-    private Long ADBENABLED;
+    private String ADBENABLED;
 
     /**
      * 
@@ -214,7 +214,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The SETINSTALLLOCATION
      */
     @JsonProperty("SET_INSTALL_LOCATION")
-    public Long getSETINSTALLLOCATION() {
+    public String getSETINSTALLLOCATION() {
         return SETINSTALLLOCATION;
     }
 
@@ -224,7 +224,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The SET_INSTALL_LOCATION
      */
     @JsonProperty("SET_INSTALL_LOCATION")
-    public void setSETINSTALLLOCATION(Long SETINSTALLLOCATION) {
+    public void setSETINSTALLLOCATION(String SETINSTALLLOCATION) {
         this.SETINSTALLLOCATION = SETINSTALLLOCATION;
     }
 
@@ -274,7 +274,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The BLUETOOTHON
      */
     @JsonProperty("BLUETOOTH_ON")
-    public Long getBLUETOOTHON() {
+    public String getBLUETOOTHON() {
         return BLUETOOTHON;
     }
 
@@ -284,7 +284,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The BLUETOOTH_ON
      */
     @JsonProperty("BLUETOOTH_ON")
-    public void setBLUETOOTHON(Long BLUETOOTHON) {
+    public void setBLUETOOTHON(String BLUETOOTHON) {
         this.BLUETOOTHON = BLUETOOTHON;
     }
 
@@ -294,7 +294,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The DOCKAUDIOMEDIAENABLED
      */
     @JsonProperty("DOCK_AUDIO_MEDIA_ENABLED")
-    public Long getDOCKAUDIOMEDIAENABLED() {
+    public String getDOCKAUDIOMEDIAENABLED() {
         return DOCKAUDIOMEDIAENABLED;
     }
 
@@ -304,7 +304,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The DOCK_AUDIO_MEDIA_ENABLED
      */
     @JsonProperty("DOCK_AUDIO_MEDIA_ENABLED")
-    public void setDOCKAUDIOMEDIAENABLED(Long DOCKAUDIOMEDIAENABLED) {
+    public void setDOCKAUDIOMEDIAENABLED(String DOCKAUDIOMEDIAENABLED) {
         this.DOCKAUDIOMEDIAENABLED = DOCKAUDIOMEDIAENABLED;
     }
 
@@ -314,7 +314,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The CDMASUBSCRIPTIONMODE
      */
     @JsonProperty("CDMA_SUBSCRIPTION_MODE")
-    public Long getCDMASUBSCRIPTIONMODE() {
+    public String getCDMASUBSCRIPTIONMODE() {
         return CDMASUBSCRIPTIONMODE;
     }
 
@@ -324,7 +324,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The CDMA_SUBSCRIPTION_MODE
      */
     @JsonProperty("CDMA_SUBSCRIPTION_MODE")
-    public void setCDMASUBSCRIPTIONMODE(Long CDMASUBSCRIPTIONMODE) {
+    public void setCDMASUBSCRIPTIONMODE(String CDMASUBSCRIPTIONMODE) {
         this.CDMASUBSCRIPTIONMODE = CDMASUBSCRIPTIONMODE;
     }
 
@@ -334,7 +334,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The USBMASSSTORAGEENABLED
      */
     @JsonProperty("USB_MASS_STORAGE_ENABLED")
-    public Long getUSBMASSSTORAGEENABLED() {
+    public String getUSBMASSSTORAGEENABLED() {
         return USBMASSSTORAGEENABLED;
     }
 
@@ -344,7 +344,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The USB_MASS_STORAGE_ENABLED
      */
     @JsonProperty("USB_MASS_STORAGE_ENABLED")
-    public void setUSBMASSSTORAGEENABLED(Long USBMASSSTORAGEENABLED) {
+    public void setUSBMASSSTORAGEENABLED(String USBMASSSTORAGEENABLED) {
         this.USBMASSSTORAGEENABLED = USBMASSSTORAGEENABLED;
     }
 
@@ -354,7 +354,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The EMERGENCYTONE
      */
     @JsonProperty("EMERGENCY_TONE")
-    public Long getEMERGENCYTONE() {
+    public String getEMERGENCYTONE() {
         return EMERGENCYTONE;
     }
 
@@ -364,7 +364,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The EMERGENCY_TONE
      */
     @JsonProperty("EMERGENCY_TONE")
-    public void setEMERGENCYTONE(Long EMERGENCYTONE) {
+    public void setEMERGENCYTONE(String EMERGENCYTONE) {
         this.EMERGENCYTONE = EMERGENCYTONE;
     }
 
@@ -374,7 +374,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The NETWORKPREFERENCE
      */
     @JsonProperty("NETWORK_PREFERENCE")
-    public Long getNETWORKPREFERENCE() {
+    public String getNETWORKPREFERENCE() {
         return NETWORKPREFERENCE;
     }
 
@@ -384,7 +384,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The NETWORK_PREFERENCE
      */
     @JsonProperty("NETWORK_PREFERENCE")
-    public void setNETWORKPREFERENCE(Long NETWORKPREFERENCE) {
+    public void setNETWORKPREFERENCE(String NETWORKPREFERENCE) {
         this.NETWORKPREFERENCE = NETWORKPREFERENCE;
     }
 
@@ -414,7 +414,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The ETHERNETMODE
      */
     @JsonProperty("ETHERNET_MODE")
-    public Long getETHERNETMODE() {
+    public String getETHERNETMODE() {
         return ETHERNETMODE;
     }
 
@@ -424,7 +424,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The ETHERNET_MODE
      */
     @JsonProperty("ETHERNET_MODE")
-    public void setETHERNETMODE(Long ETHERNETMODE) {
+    public void setETHERNETMODE(String ETHERNETMODE) {
         this.ETHERNETMODE = ETHERNETMODE;
     }
 
@@ -434,7 +434,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The WIFISCANALWAYSAVAILABLE
      */
     @JsonProperty("WIFI_SCAN_ALWAYS_AVAILABLE")
-    public Long getWIFISCANALWAYSAVAILABLE() {
+    public String getWIFISCANALWAYSAVAILABLE() {
         return WIFISCANALWAYSAVAILABLE;
     }
 
@@ -444,7 +444,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The WIFI_SCAN_ALWAYS_AVAILABLE
      */
     @JsonProperty("WIFI_SCAN_ALWAYS_AVAILABLE")
-    public void setWIFISCANALWAYSAVAILABLE(Long WIFISCANALWAYSAVAILABLE) {
+    public void setWIFISCANALWAYSAVAILABLE(String WIFISCANALWAYSAVAILABLE) {
         this.WIFISCANALWAYSAVAILABLE = WIFISCANALWAYSAVAILABLE;
     }
 
@@ -454,7 +454,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The WIFION
      */
     @JsonProperty("WIFI_ON")
-    public Long getWIFION() {
+    public String getWIFION() {
         return WIFION;
     }
 
@@ -464,7 +464,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The WIFI_ON
      */
     @JsonProperty("WIFI_ON")
-    public void setWIFION(Long WIFION) {
+    public void setWIFION(String WIFION) {
         this.WIFION = WIFION;
     }
 
@@ -514,7 +514,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The WIFIDISPLAYON
      */
     @JsonProperty("WIFI_DISPLAY_ON")
-    public Long getWIFIDISPLAYON() {
+    public String getWIFIDISPLAYON() {
         return WIFIDISPLAYON;
     }
 
@@ -524,7 +524,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The WIFI_DISPLAY_ON
      */
     @JsonProperty("WIFI_DISPLAY_ON")
-    public void setWIFIDISPLAYON(Long WIFIDISPLAYON) {
+    public void setWIFIDISPLAYON(String WIFIDISPLAYON) {
         this.WIFIDISPLAYON = WIFIDISPLAYON;
     }
 
@@ -554,7 +554,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The WIFISLEEPPOLICY
      */
     @JsonProperty("WIFI_SLEEP_POLICY")
-    public Long getWIFISLEEPPOLICY() {
+    public String getWIFISLEEPPOLICY() {
         return WIFISLEEPPOLICY;
     }
 
@@ -564,7 +564,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The WIFI_SLEEP_POLICY
      */
     @JsonProperty("WIFI_SLEEP_POLICY")
-    public void setWIFISLEEPPOLICY(Long WIFISLEEPPOLICY) {
+    public void setWIFISLEEPPOLICY(String WIFISLEEPPOLICY) {
         this.WIFISLEEPPOLICY = WIFISLEEPPOLICY;
     }
 
@@ -574,7 +574,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The WIFIWATCHDOGON
      */
     @JsonProperty("WIFI_WATCHDOG_ON")
-    public Long getWIFIWATCHDOGON() {
+    public String getWIFIWATCHDOGON() {
         return WIFIWATCHDOGON;
     }
 
@@ -584,7 +584,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The WIFI_WATCHDOG_ON
      */
     @JsonProperty("WIFI_WATCHDOG_ON")
-    public void setWIFIWATCHDOGON(Long WIFIWATCHDOGON) {
+    public void setWIFIWATCHDOGON(String WIFIWATCHDOGON) {
         this.WIFIWATCHDOGON = WIFIWATCHDOGON;
     }
 
@@ -594,7 +594,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The SENDACTIONAPPERROR
      */
     @JsonProperty("SEND_ACTION_APP_ERROR")
-    public Long getSENDACTIONAPPERROR() {
+    public String getSENDACTIONAPPERROR() {
         return SENDACTIONAPPERROR;
     }
 
@@ -604,7 +604,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The SEND_ACTION_APP_ERROR
      */
     @JsonProperty("SEND_ACTION_APP_ERROR")
-    public void setSENDACTIONAPPERROR(Long SENDACTIONAPPERROR) {
+    public void setSENDACTIONAPPERROR(String SENDACTIONAPPERROR) {
         this.SENDACTIONAPPERROR = SENDACTIONAPPERROR;
     }
 
@@ -634,7 +634,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The PREFERREDNETWORKMODE
      */
     @JsonProperty("PREFERRED_NETWORK_MODE")
-    public Long getPREFERREDNETWORKMODE() {
+    public String getPREFERREDNETWORKMODE() {
         return PREFERREDNETWORKMODE;
     }
 
@@ -644,7 +644,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The PREFERRED_NETWORK_MODE
      */
     @JsonProperty("PREFERRED_NETWORK_MODE")
-    public void setPREFERREDNETWORKMODE(Long PREFERREDNETWORKMODE) {
+    public void setPREFERREDNETWORKMODE(String PREFERREDNETWORKMODE) {
         this.PREFERREDNETWORKMODE = PREFERREDNETWORKMODE;
     }
 
@@ -654,7 +654,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The AUTOTIME
      */
     @JsonProperty("AUTO_TIME")
-    public Long getAUTOTIME() {
+    public String getAUTOTIME() {
         return AUTOTIME;
     }
 
@@ -664,7 +664,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The AUTO_TIME
      */
     @JsonProperty("AUTO_TIME")
-    public void setAUTOTIME(Long AUTOTIME) {
+    public void setAUTOTIME(String AUTOTIME) {
         this.AUTOTIME = AUTOTIME;
     }
 
@@ -694,7 +694,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The AUDIOSAFEVOLUMESTATE
      */
     @JsonProperty("AUDIO_SAFE_VOLUME_STATE")
-    public Long getAUDIOSAFEVOLUMESTATE() {
+    public String getAUDIOSAFEVOLUMESTATE() {
         return AUDIOSAFEVOLUMESTATE;
     }
 
@@ -704,7 +704,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The AUDIO_SAFE_VOLUME_STATE
      */
     @JsonProperty("AUDIO_SAFE_VOLUME_STATE")
-    public void setAUDIOSAFEVOLUMESTATE(Long AUDIOSAFEVOLUMESTATE) {
+    public void setAUDIOSAFEVOLUMESTATE(String AUDIOSAFEVOLUMESTATE) {
         this.AUDIOSAFEVOLUMESTATE = AUDIOSAFEVOLUMESTATE;
     }
 
@@ -714,7 +714,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The AIRPLANEMODEON
      */
     @JsonProperty("AIRPLANE_MODE_ON")
-    public Long getAIRPLANEMODEON() {
+    public String getAIRPLANEMODEON() {
         return AIRPLANEMODEON;
     }
 
@@ -724,7 +724,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The AIRPLANE_MODE_ON
      */
     @JsonProperty("AIRPLANE_MODE_ON")
-    public void setAIRPLANEMODEON(Long AIRPLANEMODEON) {
+    public void setAIRPLANEMODEON(String AIRPLANEMODEON) {
         this.AIRPLANEMODEON = AIRPLANEMODEON;
     }
 
@@ -754,7 +754,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The WIFIMAXDHCPRETRYCOUNT
      */
     @JsonProperty("WIFI_MAX_DHCP_RETRY_COUNT")
-    public Long getWIFIMAXDHCPRETRYCOUNT() {
+    public String getWIFIMAXDHCPRETRYCOUNT() {
         return WIFIMAXDHCPRETRYCOUNT;
     }
 
@@ -764,7 +764,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The WIFI_MAX_DHCP_RETRY_COUNT
      */
     @JsonProperty("WIFI_MAX_DHCP_RETRY_COUNT")
-    public void setWIFIMAXDHCPRETRYCOUNT(Long WIFIMAXDHCPRETRYCOUNT) {
+    public void setWIFIMAXDHCPRETRYCOUNT(String WIFIMAXDHCPRETRYCOUNT) {
         this.WIFIMAXDHCPRETRYCOUNT = WIFIMAXDHCPRETRYCOUNT;
     }
 
@@ -774,7 +774,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The POWERSOUNDSENABLED
      */
     @JsonProperty("POWER_SOUNDS_ENABLED")
-    public Long getPOWERSOUNDSENABLED() {
+    public String getPOWERSOUNDSENABLED() {
         return POWERSOUNDSENABLED;
     }
 
@@ -784,7 +784,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The POWER_SOUNDS_ENABLED
      */
     @JsonProperty("POWER_SOUNDS_ENABLED")
-    public void setPOWERSOUNDSENABLED(Long POWERSOUNDSENABLED) {
+    public void setPOWERSOUNDSENABLED(String POWERSOUNDSENABLED) {
         this.POWERSOUNDSENABLED = POWERSOUNDSENABLED;
     }
 
@@ -794,7 +794,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The MODERINGER
      */
     @JsonProperty("MODE_RINGER")
-    public Long getMODERINGER() {
+    public String getMODERINGER() {
         return MODERINGER;
     }
 
@@ -804,7 +804,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The MODE_RINGER
      */
     @JsonProperty("MODE_RINGER")
-    public void setMODERINGER(Long MODERINGER) {
+    public void setMODERINGER(String MODERINGER) {
         this.MODERINGER = MODERINGER;
     }
 
@@ -814,7 +814,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The DOCKSOUNDSENABLED
      */
     @JsonProperty("DOCK_SOUNDS_ENABLED")
-    public Long getDOCKSOUNDSENABLED() {
+    public String getDOCKSOUNDSENABLED() {
         return DOCKSOUNDSENABLED;
     }
 
@@ -824,7 +824,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The DOCK_SOUNDS_ENABLED
      */
     @JsonProperty("DOCK_SOUNDS_ENABLED")
-    public void setDOCKSOUNDSENABLED(Long DOCKSOUNDSENABLED) {
+    public void setDOCKSOUNDSENABLED(String DOCKSOUNDSENABLED) {
         this.DOCKSOUNDSENABLED = DOCKSOUNDSENABLED;
     }
 
@@ -834,7 +834,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The ASSISTEDGPSENABLED
      */
     @JsonProperty("ASSISTED_GPS_ENABLED")
-    public Long getASSISTEDGPSENABLED() {
+    public String getASSISTEDGPSENABLED() {
         return ASSISTEDGPSENABLED;
     }
 
@@ -844,7 +844,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The ASSISTED_GPS_ENABLED
      */
     @JsonProperty("ASSISTED_GPS_ENABLED")
-    public void setASSISTEDGPSENABLED(Long ASSISTEDGPSENABLED) {
+    public void setASSISTEDGPSENABLED(String ASSISTEDGPSENABLED) {
         this.ASSISTEDGPSENABLED = ASSISTEDGPSENABLED;
     }
 
@@ -854,7 +854,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The CDMACELLBROADCASTSMS
      */
     @JsonProperty("CDMA_CELL_BROADCAST_SMS")
-    public Long getCDMACELLBROADCASTSMS() {
+    public String getCDMACELLBROADCASTSMS() {
         return CDMACELLBROADCASTSMS;
     }
 
@@ -864,7 +864,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The CDMA_CELL_BROADCAST_SMS
      */
     @JsonProperty("CDMA_CELL_BROADCAST_SMS")
-    public void setCDMACELLBROADCASTSMS(Long CDMACELLBROADCASTSMS) {
+    public void setCDMACELLBROADCASTSMS(String CDMACELLBROADCASTSMS) {
         this.CDMACELLBROADCASTSMS = CDMACELLBROADCASTSMS;
     }
 
@@ -874,7 +874,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The AIRPLANEMODEONFASTBOOT
      */
     @JsonProperty("AIRPLANE_MODE_ON_FAST_BOOT")
-    public Long getAIRPLANEMODEONFASTBOOT() {
+    public String getAIRPLANEMODEONFASTBOOT() {
         return AIRPLANEMODEONFASTBOOT;
     }
 
@@ -884,7 +884,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The AIRPLANE_MODE_ON_FAST_BOOT
      */
     @JsonProperty("AIRPLANE_MODE_ON_FAST_BOOT")
-    public void setAIRPLANEMODEONFASTBOOT(Long AIRPLANEMODEONFASTBOOT) {
+    public void setAIRPLANEMODEONFASTBOOT(String AIRPLANEMODEONFASTBOOT) {
         this.AIRPLANEMODEONFASTBOOT = AIRPLANEMODEONFASTBOOT;
     }
 
@@ -894,7 +894,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The WIFINETWORKSAVAILABLENOTIFICATIONON
      */
     @JsonProperty("WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON")
-    public Long getWIFINETWORKSAVAILABLENOTIFICATIONON() {
+    public String getWIFINETWORKSAVAILABLENOTIFICATIONON() {
         return WIFINETWORKSAVAILABLENOTIFICATIONON;
     }
 
@@ -904,7 +904,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON
      */
     @JsonProperty("WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON")
-    public void setWIFINETWORKSAVAILABLENOTIFICATIONON(Long WIFINETWORKSAVAILABLENOTIFICATIONON) {
+    public void setWIFINETWORKSAVAILABLENOTIFICATIONON(String WIFINETWORKSAVAILABLENOTIFICATIONON) {
         this.WIFINETWORKSAVAILABLENOTIFICATIONON = WIFINETWORKSAVAILABLENOTIFICATIONON;
     }
 
@@ -914,7 +914,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The ETHERNETON
      */
     @JsonProperty("ETHERNET_ON")
-    public Long getETHERNETON() {
+    public String getETHERNETON() {
         return ETHERNETON;
     }
 
@@ -924,7 +924,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The ETHERNET_ON
      */
     @JsonProperty("ETHERNET_ON")
-    public void setETHERNETON(Long ETHERNETON) {
+    public void setETHERNETON(String ETHERNETON) {
         this.ETHERNETON = ETHERNETON;
     }
 
@@ -954,7 +954,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The DATAROAMING
      */
     @JsonProperty("DATA_ROAMING")
-    public Long getDATAROAMING() {
+    public String getDATAROAMING() {
         return DATAROAMING;
     }
 
@@ -964,7 +964,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The DATA_ROAMING
      */
     @JsonProperty("DATA_ROAMING")
-    public void setDATAROAMING(Long DATAROAMING) {
+    public void setDATAROAMING(String DATAROAMING) {
         this.DATAROAMING = DATAROAMING;
     }
 
@@ -974,7 +974,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The DEVICEPROVISIONED
      */
     @JsonProperty("DEVICE_PROVISIONED")
-    public Long getDEVICEPROVISIONED() {
+    public String getDEVICEPROVISIONED() {
         return DEVICEPROVISIONED;
     }
 
@@ -984,7 +984,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The DEVICE_PROVISIONED
      */
     @JsonProperty("DEVICE_PROVISIONED")
-    public void setDEVICEPROVISIONED(Long DEVICEPROVISIONED) {
+    public void setDEVICEPROVISIONED(String DEVICEPROVISIONED) {
         this.DEVICEPROVISIONED = DEVICEPROVISIONED;
     }
 
@@ -1014,7 +1014,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The AUTOTIMEZONE
      */
     @JsonProperty("AUTO_TIME_ZONE")
-    public Long getAUTOTIMEZONE() {
+    public String getAUTOTIMEZONE() {
         return AUTOTIMEZONE;
     }
 
@@ -1024,7 +1024,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The AUTO_TIME_ZONE
      */
     @JsonProperty("AUTO_TIME_ZONE")
-    public void setAUTOTIMEZONE(Long AUTOTIMEZONE) {
+    public void setAUTOTIMEZONE(String AUTOTIMEZONE) {
         this.AUTOTIMEZONE = AUTOTIMEZONE;
     }
 
@@ -1034,7 +1034,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The PACKAGEVERIFIERENABLE
      */
     @JsonProperty("PACKAGE_VERIFIER_ENABLE")
-    public Long getPACKAGEVERIFIERENABLE() {
+    public String getPACKAGEVERIFIERENABLE() {
         return PACKAGEVERIFIERENABLE;
     }
 
@@ -1044,7 +1044,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The PACKAGE_VERIFIER_ENABLE
      */
     @JsonProperty("PACKAGE_VERIFIER_ENABLE")
-    public void setPACKAGEVERIFIERENABLE(Long PACKAGEVERIFIERENABLE) {
+    public void setPACKAGEVERIFIERENABLE(String PACKAGEVERIFIERENABLE) {
         this.PACKAGEVERIFIERENABLE = PACKAGEVERIFIERENABLE;
     }
 
@@ -1094,7 +1094,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The DEFAULTINSTALLLOCATION
      */
     @JsonProperty("DEFAULT_INSTALL_LOCATION")
-    public Long getDEFAULTINSTALLLOCATION() {
+    public String getDEFAULTINSTALLLOCATION() {
         return DEFAULTINSTALLLOCATION;
     }
 
@@ -1104,7 +1104,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The DEFAULT_INSTALL_LOCATION
      */
     @JsonProperty("DEFAULT_INSTALL_LOCATION")
-    public void setDEFAULTINSTALLLOCATION(Long DEFAULTINSTALLLOCATION) {
+    public void setDEFAULTINSTALLLOCATION(String DEFAULTINSTALLLOCATION) {
         this.DEFAULTINSTALLLOCATION = DEFAULTINSTALLLOCATION;
     }
 
@@ -1114,7 +1114,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The MOBILEDATA
      */
     @JsonProperty("MOBILE_DATA")
-    public Long getMOBILEDATA() {
+    public String getMOBILEDATA() {
         return MOBILEDATA;
     }
 
@@ -1124,7 +1124,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The MOBILE_DATA
      */
     @JsonProperty("MOBILE_DATA")
-    public void setMOBILEDATA(Long MOBILEDATA) {
+    public void setMOBILEDATA(String MOBILEDATA) {
         this.MOBILEDATA = MOBILEDATA;
     }
 
@@ -1134,7 +1134,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The INSTALLNONMARKETAPPS
      */
     @JsonProperty("INSTALL_NON_MARKET_APPS")
-    public Long getINSTALLNONMARKETAPPS() {
+    public String getINSTALLNONMARKETAPPS() {
         return INSTALLNONMARKETAPPS;
     }
 
@@ -1144,7 +1144,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The INSTALL_NON_MARKET_APPS
      */
     @JsonProperty("INSTALL_NON_MARKET_APPS")
-    public void setINSTALLNONMARKETAPPS(Long INSTALLNONMARKETAPPS) {
+    public void setINSTALLNONMARKETAPPS(String INSTALLNONMARKETAPPS) {
         this.INSTALLNONMARKETAPPS = INSTALLNONMARKETAPPS;
     }
 
@@ -1154,7 +1154,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The CALLAUTORETRY
      */
     @JsonProperty("CALL_AUTO_RETRY")
-    public Long getCALLAUTORETRY() {
+    public String getCALLAUTORETRY() {
         return CALLAUTORETRY;
     }
 
@@ -1164,7 +1164,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The CALL_AUTO_RETRY
      */
     @JsonProperty("CALL_AUTO_RETRY")
-    public void setCALLAUTORETRY(Long CALLAUTORETRY) {
+    public void setCALLAUTORETRY(String CALLAUTORETRY) {
         this.CALLAUTORETRY = CALLAUTORETRY;
     }
 
@@ -1174,7 +1174,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The LOWBATTERYSOUNDTIMEOUT
      */
     @JsonProperty("LOW_BATTERY_SOUND_TIMEOUT")
-    public Long getLOWBATTERYSOUNDTIMEOUT() {
+    public String getLOWBATTERYSOUNDTIMEOUT() {
         return LOWBATTERYSOUNDTIMEOUT;
     }
 
@@ -1184,7 +1184,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The LOW_BATTERY_SOUND_TIMEOUT
      */
     @JsonProperty("LOW_BATTERY_SOUND_TIMEOUT")
-    public void setLOWBATTERYSOUNDTIMEOUT(Long LOWBATTERYSOUNDTIMEOUT) {
+    public void setLOWBATTERYSOUNDTIMEOUT(String LOWBATTERYSOUNDTIMEOUT) {
         this.LOWBATTERYSOUNDTIMEOUT = LOWBATTERYSOUNDTIMEOUT;
     }
 
@@ -1194,7 +1194,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The NETSTATSENABLED
      */
     @JsonProperty("NETSTATS_ENABLED")
-    public Long getNETSTATSENABLED() {
+    public String getNETSTATSENABLED() {
         return NETSTATSENABLED;
     }
 
@@ -1204,7 +1204,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The NETSTATS_ENABLED
      */
     @JsonProperty("NETSTATS_ENABLED")
-    public void setNETSTATSENABLED(Long NETSTATSENABLED) {
+    public void setNETSTATSENABLED(String NETSTATSENABLED) {
         this.NETSTATSENABLED = NETSTATSENABLED;
     }
 
@@ -1234,7 +1234,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The STAYONWHILEPLUGGEDIN
      */
     @JsonProperty("STAY_ON_WHILE_PLUGGED_IN")
-    public Long getSTAYONWHILEPLUGGEDIN() {
+    public String getSTAYONWHILEPLUGGEDIN() {
         return STAYONWHILEPLUGGEDIN;
     }
 
@@ -1244,7 +1244,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The STAY_ON_WHILE_PLUGGED_IN
      */
     @JsonProperty("STAY_ON_WHILE_PLUGGED_IN")
-    public void setSTAYONWHILEPLUGGEDIN(Long STAYONWHILEPLUGGEDIN) {
+    public void setSTAYONWHILEPLUGGEDIN(String STAYONWHILEPLUGGEDIN) {
         this.STAYONWHILEPLUGGEDIN = STAYONWHILEPLUGGEDIN;
     }
 
@@ -1254,7 +1254,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The ADBENABLED
      */
     @JsonProperty("ADB_ENABLED")
-    public Long getADBENABLED() {
+    public String getADBENABLED() {
         return ADBENABLED;
     }
 
@@ -1264,7 +1264,7 @@ public class SETTINGSGLOBAL implements Serializable{
      *     The ADB_ENABLED
      */
     @JsonProperty("ADB_ENABLED")
-    public void setADBENABLED(Long ADBENABLED) {
+    public void setADBENABLED(String ADBENABLED) {
         this.ADBENABLED = ADBENABLED;
     }
 
