@@ -120,6 +120,7 @@ public class BugsServlet extends HttpServlet {
 		try {
 			acraReport = Helpers.mapper.readValue(sb.toString(),
 					ACRAReport.class);
+			EntityManager.saveAcraReport(acraReport);
 		} catch (JsonGenerationException e) {
 			resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
 			logger.warning(e.getMessage());
@@ -138,9 +139,14 @@ public class BugsServlet extends HttpServlet {
 			logger.warning(sb.toString());
 			Helpers.respondWithError(out, "IO error while mapping");
 			return;
+		} catch (Exception e) {
+			resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+			logger.warning(e.getMessage());
+			logger.warning(sb.toString());
+			Helpers.respondWithError(out, "Generic error");
+			return;
 		}
 
-		EntityManager.saveAcraReport(acraReport);
 		resp.setStatus(HttpServletResponse.SC_OK);
 		Helpers.respondWithMessage(out, "Report uploaded");
 	}
